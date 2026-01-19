@@ -58,8 +58,8 @@ li {
   height: auto;
 }
 .card{
-  background-color: rgb(71, 4, 4);
-  color: rgb(255, 197, 197);
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
   height: 150px;
   width: 100%;
   display: flex;
@@ -75,8 +75,8 @@ li {
   overflow: hidden;
   border-radius: 2px;
   transition: all.5s;
-  background-color: rgb(0, 0, 0);
-  border: 1px solid rgb(33, 1, 1);
+  background-color: rgb(255, 227, 227);
+  border: 1px solid rgb(0, 0, 0);
   display: flex;
   justify-content: center;
   align-items: center;
