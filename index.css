@@ -40,7 +40,7 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 40px 20px;
+  margin: 20px 10px;
   gap: 40px;
 }
 
@@ -127,6 +127,18 @@ li {
   cursor: pointer;
 }
 
+.columna1 {
+  width: 60%;
+}
 
+.columna2 {
+  width: 40%;
+}
 
+.columna3 {
+  width:40%;
+}
 
+.columna4 {
+  width: 60%;
+}
