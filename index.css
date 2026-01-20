@@ -1,4 +1,4 @@
-/* Barra superior */
+
 .barra-superior {
   display: flex;
   align-items: center;
@@ -97,7 +97,7 @@ li {
 }
 
 .formulario {
-  max-width: 500px;   /* antes 300px */
+  max-width: 500px;   
   margin: 30px auto;
   display: flex;
   flex-direction: column;
