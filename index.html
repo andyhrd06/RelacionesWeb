@@ -37,7 +37,7 @@
     <li><a href="representacion.html">Representación</a></li>
     <li><a href="propiedades.html">Propiedades</a></li>
     <li><a href="orden.html">Orden</a></li>
-    <li><a href="relaciones-inversa-compuesta.html">Relación inversa y compuesta</a></li>
+    <li><a href="relaciones-inv-com.html">Relación inversa y compuesta</a></li>
     <li><a href="clausura.html">Clausura</a></li>
     <li><a href="equivalencia.html">Equivalencia</a></li>
     <li><a href="matlab.html">Matlab</a></li>
@@ -55,11 +55,14 @@
     <div class="columna">
     <h2>¿Por qué este<br>proyecto?</h2>
     <p>
-        Lorem ipsum dolor sit amet consectetur
-        adipiscing elit congue sagittis, per
-        et augue taciti porttitor quis pretium
-        imperdiet auctor, morbi inceptos libero
-        habitant cursus nam quisque mollis.
+        El presente proyecto nace de
+        una necesidad de implementar una 
+        manera mas interactiva e
+        interesante de aprender sobre el
+        tema de relaciones, donde no solo
+        se trata de entender la teoria,
+        sino de explayar nuestros
+        conocimientos en una pagina web.
     </p>
     </div>
 
@@ -68,24 +71,23 @@
     </div>
 
     <div class="columna">
-    <h2>¿A quién<br>está dirigido<br>el proyecto?</h2>
+    <h2>¿A quién<br>está dirigido?</h2>
     <p>
-        Lorem ipsum dolor sit amet
-        adipiscing elit congue sagi
-        et augue taciti porttitor
-        imperdiet auctor, morbi libero
-        habitant cursus nam quisque.
+        Este proyecto esta dirigido a
+        todos aquellos estudiantes que
+        desean saber y aprender sobre
+        el tema relaciones de matematicas
+        computacionales, y a profesores
+        que deseen implementar en sus
+        clases un metodo de aprendizaje
+        virtual-interactivo.
     </p>
     </div>
 </div>
 
 <p id="quienes-somos" align="center">Quienes somos?</p>
     <p>
-        Lorem ipsum dolor sit amet
-        adipiscing elit congue sagi
-        et augue taciti porttitor
-        imperdiet auctor, morbi libero
-        habitant cursus nam quisque.
+        Somos estudiantes de la Escuela Politecnica Nacional, de la carrera Ciencias de la Computacion que buscan crear una pagina web donde aprender de la materia Matematicas Computacionales no sea una tarde aburrida, sino una facil visita y revision.
     </p>
 
     <img src="angela.png" alt="Angela Cevallos" width="100" height="100">
@@ -94,11 +96,7 @@
     <img src="pepito.png" alt="Toni Preguntoni" width="100" height="100">
 
     <p align="center">Que contenido voy a encontrar aqui?</p>
-        <p>Lorem ipsum dolor sit amet
-        adipiscing elit congue sagi
-        et augue taciti porttitor
-        imperdiet auctor, morbi libero
-        habitant cursus nam quisque.</p>
+        <p>En la siguiente pagina usted va a encontrar los siguientes contenidos:</p>
     
 <div class="card">
     <p onclick="location.href='representacion.html'">
@@ -113,7 +111,7 @@
         <span>Orden</span>
     </p>
 
-    <p onclick="location.href='relaciones-inversa-compuesta.html'">
+    <p onclick="location.href='relaciones-inv-com.html'">
         <span>Rel. Inv y Comp</span>
     </p>
 
@@ -129,31 +127,32 @@
 <p id="contactanos" align="center">Contactanos</p>
 
     <p>
-        Lorem ipsum dolor sit amet consectetur
-        adipiscing elit congue sagittis, per
-        et augue taciti porttitor quis pretium
-        imperdiet auctor, morbi inceptos libero
-        habitant cursus nam quisque mollis.
+        Si tuviste algun problema con la pagina, deseas darnos sugerencias o nos falto algun contenido, sientete libre de llenar el formulario y hacernoslo saber.
     </p>
 
+    <form
+        class="formulario"
+        action="https://formsubmit.co/guarany666@gmail.com"
+        method="POST"
+    >
 
-<form class="formulario">
+        <input type="hidden" name="_subject" value="Nuevo mensaje desde la web">
+        <input type="hidden" name="_captcha" value="false">
 
-    <label for="nombre">Nombre</label>
-    <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" required>
 
-    <label for="email">Email</label>
-    <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
 
-    <label for="mensaje">Mensaje</label>
-    <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí" required></textarea>
+        <label for="mensaje">Mensaje</label>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-    <div class="boton-derecha">
-    <button type="submit">Enviar</button>
-    </div>
+        <div class="boton-derecha">
+            <button type="submit">Enviar</button>
+        </div>
 
-</form>
-
+    </form>
 
 </body>
 </html>
