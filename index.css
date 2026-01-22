@@ -159,46 +159,48 @@ li {
 }
 
 
-/* Contenedor del bloque de código */
-pre {
-    background-color: #1e1e1e;      /* fondo oscuro */
+/* Contenedor general */
+.contenedor-codigos {
+    display: flex;
+    gap: 150px;               /* espacio entre bloques */
+    justify-content: center;
+    align-items: flex-start;
+    margin: 40px 0;
+}
+
+/* Cada bloque */
+.bloque-codigo {
+    display: flex;
+    flex-direction: column;  /* código arriba, botón abajo */
+    align-items: center;
+    width: 420px;            /* 👈 ajusta el tamaño aquí */
+}
+
+/* Bloque de código */
+.bloque-codigo pre {
+    width: 100%;
+    background-color: #1e1e1e;
     color: #d4d4d4;
     padding: 20px;
-    border-radius: 8px;
-    font-size: 15px;
-    max-width: 100%;
-    max-height: 600px;              /* 👈 cambia aquí el alto */
-    overflow: auto;                 /* 👈 scroll automático */
-    box-shadow: 0 0 10px rgba(0,0,0,0.6);
+    border-radius: 10px;
+    max-height: 350px;       /* 👈 alto configurable */
+    overflow: auto;          /* scroll */
+    font-size: 14px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.6);
 }
 
-/*esto es pa matlab*/
-code {
-    font-family: Consolas, "Courier New", monospace;
+/* Botón */
+.bloque-codigo button {
+    margin-top: 12px;
+    padding: 8px 16px;
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
 }
 
-/* Ajustes de Prism en modo oscuro */
-pre[class*="language-"] {
-    background: #1e1e1e !important;
+.bloque-codigo button:hover {
+    background-color: #444;
 }
-
-/* Scrollbar (Chrome / Edge) */
-pre::-webkit-scrollbar {
-    height: 8px;
-    width: 8px;
-}
-
-pre::-webkit-scrollbar-track {
-    background: #2a2a2a;
-}
-
-pre::-webkit-scrollbar-thumb {
-    background: #555;
-    border-radius: 4px;
-}
-
-pre::-webkit-scrollbar-thumb:hover {
-    background: #777;
-}
-/*aqui termina lo de matlab*/
-

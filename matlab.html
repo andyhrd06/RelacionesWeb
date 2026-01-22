@@ -55,28 +55,41 @@ Puede copiar y pegar los códigos para utilizarlos en deberes, estudio personal 
 un programa en MATLAB que permita validar las propiedades de las relaciones.
 </p>
 
-<div class="seccion-central">
-<h3>Propiedad Reflexiva</h3>
-<h3>Propiedad Irreflexiva</h3>
-</div>
+<div class="contenedor-codigos">
 
-<div class="seccion-central">
+    <!-- BLOQUE 1 -->
+    <div class="bloque-codigo">
+        <h3>Propiedad Reflexiva</h3>
 
-<pre><code class="language-matlab" id="matlab1">
+        <pre><code class="language-matlab" id="codigo1">
 A = [1 2 3];
 R = [1 1;
-    2 3;
-    3 2];
+     2 3;
+     3 2];
 
 disp('Relacion reflexiva');
-</code></pre>
+        </code></pre>
 
-<button onclick="copiarCodigo('matlab1')">
-    Copiar código
-</button>
+        <button onclick="copiarCodigo('codigo1')">
+            Copiar código
+        </button>
+    </div>
 
+    <!-- BLOQUE 2 -->
+    <div class="bloque-codigo">
+        <h3>Propiedad Irreflexiva</h3>
 
-    <img src="imagenes/codigomatlabgenerico.png" alt="Angela Cevallos" width="600" height="500">
+        <pre><code class="language-matlab" id="codigo2">
+X = 1:10;
+n = length(X);
+avg = mean(X);
+disp(avg);
+        </code></pre>
+
+        <button onclick="copiarCodigo('codigo2')">
+            Copiar código
+        </button>
+    </div>
 </div>
 
 <div class="seccion-central">
