@@ -142,3 +142,22 @@ li {
 .columna4 {
   width: 60%;
 }
+
+.columnamat{
+  width: 48%
+}
+
+.bloque-codigo {
+    position: relative;
+    max-width: 700px;
+}
+
+.bloque-codigo button {
+    margin-top: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+
+
+
