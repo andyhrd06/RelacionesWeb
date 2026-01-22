@@ -179,8 +179,8 @@ li {
 /* Bloque de código */
 .bloque-codigo pre {
     width: 100%;
-    background-color: #1e1e1e;
-    color: #d4d4d4;
+    background-color: #d51a1a;
+    color: #000000;
     padding: 20px;
     border-radius: 10px;
     max-height: 350px;       /* 👈 alto configurable */
