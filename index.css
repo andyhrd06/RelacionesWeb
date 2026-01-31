@@ -511,7 +511,7 @@ body {
 .team-info-box {
     background: linear-gradient(135deg, #3D5A80 0%, #2B3A67 100%);
     border-radius: 40px;
-    padding: 50px 40px;
+    padding: 30px 30px;
     flex: 0 0 350px;
     text-align: right;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
