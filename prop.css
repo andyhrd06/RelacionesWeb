@@ -1,0 +1,189 @@
+/* ============================================
+   PÁGINA: PROPIEDADES DE LAS RELACIONES
+   ============================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+    background: #E8E4F0;
+    min-height: 100vh;
+    color: #2C3E5F;
+    overflow-x: hidden;
+}
+
+/* ===== CÍRCULOS DECORATIVOS ===== */
+.circle-deco {
+    position: fixed;
+    border-radius: 50%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.circle-1 { width:350px;height:350px;background:rgba(174,141,205,.25);top:5%;left:-80px;}
+.circle-2 { width:180px;height:180px;background:rgba(174,141,205,.15);top:15%;right:8%;}
+.circle-3 { width:220px;height:220px;background:rgba(174,141,205,.2);bottom:25%;left:5%;}
+.circle-4 { width:140px;height:140px;background:rgba(174,141,205,.3);top:45%;left:15%;}
+.circle-5 { width:280px;height:280px;background:rgba(174,141,205,.18);bottom:10%;right:-60px;}
+
+.circle-6 { width:200px;height:200px;background:rgba(88,129,134,.25);top:30%;right:15%;}
+.circle-7 { width:160px;height:160px;background:rgba(88,129,134,.2);bottom:35%;right:5%;}
+.circle-8 { width:240px;height:240px;background:rgba(88,129,134,.15);top:60%;left:-40px;}
+.circle-9 { width:120px;height:120px;background:rgba(88,129,134,.3);top:8%;left:25%;}
+.circle-10{ width:190px;height:190px;background:rgba(88,129,134,.22);bottom:5%;left:30%;}
+
+.circle-11{ width:150px;height:150px;background:rgba(111,117,140,.2);top:20%;right:30%;}
+.circle-12{ width:100px;height:100px;background:rgba(111,117,140,.15);bottom:45%;left:40%;}
+.circle-13{ width:130px;height:130px;background:rgba(111,117,140,.25);top:70%;right:20%;}
+.circle-14{ width:170px;height:170px;background:rgba(111,117,140,.18);bottom:15%;right:35%;}
+.circle-15{ width:80px;height:80px;background:rgba(174,141,205,.12);top:40%;right:40%;}
+.circle-16{ width:95px;height:95px;background:rgba(88,129,134,.18);top:55%;right:10%;}
+.circle-17{ width:110px;height:110px;background:rgba(174,141,205,.22);bottom:20%;left:20%;}
+.circle-18{ width:85px;height:85px;background:rgba(111,117,140,.2);top:35%;left:50%;}
+
+/* ===== BARRA SUPERIOR ===== */
+.barra-superior {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background: #2B3A67;
+    box-shadow: 0 4px 12px rgba(0,0,0,.3);
+}
+
+.botones-izq, .botones-der {
+    display: flex;
+    gap: 15px;
+}
+
+.barra-superior button {
+    background: #1F2A44;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.barra-superior button:hover {
+    background: #588186;
+    transform: translateY(-2px);
+}
+
+.titulo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+}
+
+/* ===== MENÚ ===== */
+#menu {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background: #2b6167;
+    padding: 20px 30px;
+    list-style: none;
+    border-radius: 15px;
+    box-shadow: 0 8px 24px rgba(0,0,0,.4);
+}
+
+#menu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+}
+
+/* ===== CONTENIDO ===== */
+h1 {
+    background: white;
+    border-radius: 35px;
+    padding: 30px 50px;
+    max-width: 900px;
+    margin: 50px auto 30px;
+    font-size: 50px;
+    text-align: center;
+}
+
+p {
+    max-width: 900px;
+    margin: 10px auto;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+p + ul {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 25px;
+    background: linear-gradient(135deg,#4A5F7F,#3B4D6B);
+    border-radius: 30px;
+}
+
+p + ul li {
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h2 {
+    background: linear-gradient(135deg,#5FA8A8,#4A9494);
+    color: white;
+    padding: 18px 50px;
+    border-radius: 35px;
+    max-width: 800px;
+    margin: 60px auto 20px;
+    font-size: 38px;
+}
+
+h3, h4 {
+    max-width: 900px;
+    margin: 20px auto 10px;
+}
+
+/* ===== CAJAS ===== */
+.box {
+    background: white;
+    border-radius: 25px;
+    padding: 25px 35px;
+    max-width: 900px;
+    margin: 15px auto;
+    box-shadow: 0 6px 20px rgba(0,0,0,.15);
+}
+
+.condicion {
+    background: linear-gradient(135deg,#4A5F7F,#3B4D6B);
+    color: white;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* ===== EJEMPLOS ===== */
+.ejemplo-box {
+    background: rgba(232,244,248,.95);
+    border-radius: 25px;
+    padding: 25px 35px;
+    max-width: 900px;
+    margin: 20px auto 40px;
+    font-size: 18px;
+    box-shadow: 0 6px 20px rgba(0,0,0,.15);
+    border-left: 10px solid #5FA8A8;
+}
+
+.check {
+    color: #0f766e;
+    font-weight: bold;
+}
+

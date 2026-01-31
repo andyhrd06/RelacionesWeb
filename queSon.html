@@ -2,18 +2,37 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Relaciones</title>
-
-    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relaciones Matemáticas</title>
+    <link rel="stylesheet" href="queSon.css">
 </head>
 
 <body>
 
+<!-- Círculos decorativos de fondo -->
+<div class="circle-deco circle-1"></div>
+<div class="circle-deco circle-2"></div>
+<div class="circle-deco circle-3"></div>
+<div class="circle-deco circle-4"></div>
+<div class="circle-deco circle-5"></div>
+<div class="circle-deco circle-6"></div>
+<div class="circle-deco circle-7"></div>
+<div class="circle-deco circle-8"></div>
+<div class="circle-deco circle-9"></div>
+<div class="circle-deco circle-10"></div>
+<div class="circle-deco circle-11"></div>
+<div class="circle-deco circle-12"></div>
+<div class="circle-deco circle-13"></div>
+<div class="circle-deco circle-14"></div>
+<div class="circle-deco circle-15"></div>
+<div class="circle-deco circle-16"></div>
+<div class="circle-deco circle-17"></div>
+<div class="circle-deco circle-18"></div>
+
 <!-- Barra superior -->
 <div class="barra-superior">
-
     <div class="botones-izq">
-    <button onclick="menu.hidden = !menu.hidden">≡</button>
+        <button onclick="menu.hidden = !menu.hidden">≡</button>
         <a href="index.html">
             <button>Inicio</button>
         </a>
@@ -28,9 +47,8 @@
         <a href="index.html#contactanos">
             <button>Contáctanos</button>
         </a>
-    <button onclick="location.href='matlab.html'">MatLab</button>
+        <button onclick="location.href='matlab.html'">MatLab</button>
     </div>
-
 </div>
 
 <ul id="menu" hidden>
@@ -45,70 +63,138 @@
     <li><a href="matlab.html">Matlab</a></li>
 </ul>
 
+<!-- Contenido principal -->
+<div class="content-wrapper">
+    
+    <!-- Caja de definición principal con título (caja blanca con transparencia y borde morado) -->
+    <div class="definition-main">
+        <h1>¿Qué son las relaciones?</h1>
+        
+        <p>En matemáticas, una <b>relación</b> es una forma de <b>vincular elementos de un conjunto con 
+        elementos de otro conjunto.</b> Sean dos conjuntos A y B. 
+        Una relación <b>R de A a B</b> se define como un <b>subconjunto del producto cartesiano:</b></p>
+        
+        <p align="center">R ⊆ A × B</p>
+        
+        <p>Esto significa que una relación está formada por <b>pares ordenados.</b></p>
+    </div>
 
-<h1 align="center">QUE SON?</h1>
-<p>En matemáticas, una <b>relación</b> es una forma de <b>vincular elementos de un conjunto con 
-elementos de otro conjunto.</b>
-Sean dos conjuntos A y B. 
-Una relación <b>R de A a B</b> se define como un <b>subconjunto del producto cartesiano:</b>
-<p align="center">R⊆𝐴×𝐵</p>
-Esto significa que una relación está formada por <b>pares ordenados.</b></p>
+    <!-- Caja "Pares Ordenados" (caja azul oscuro) -->
+    <div class="pares-box">
+        <h2>Pares Ordenados</h2>
+        
+        <p>Un <b>par ordenado</b> se escribe como:</p>
+        
+        <p align="center">(a,b)</p>
+        
+        <p>donde:</p>
+        <ul>
+            <li>a ∈ A</li>
+            <li>b ∈ B</li>
+        </ul>
+        
+        <p>El orden importa, por lo tanto:</p>
+        
+        <p align="center">(a, b) ≠ (b,a)</p>
+        
+        <p>Si el par (a,b) pertenece a la relacion R, se escribe:</p>
+        
+        <p align="center">a R b</p>
+        
+        <p>y se lee: <b>"a está relacionado con b".</b></p>
+    </div>
 
-<h2><b>Pares Ordenados</b></h2>
-<p>Un <b>par ordenado</b> se escribe como:</p>
-<p align="center">(a,b)</p>
-<p>donde:
-    <ul type="circle">
-        <li>a∈𝐴</li>
-        <li>b∈B</li>
-    </ul>
-    El orden importa, por lo tanto:
-    <p align="center">(𝑎, 𝑏) ≠ (𝑏,𝑎)</p>
-    Si el par (a,b) pertenece a la relacion R, se escribe:
-    <p alig="center"> a R b </p>
-    y se lee: <b>" a esta relacionado con b".</b>
-</p>
+    <!-- Sección de dos columnas -->
+    <div class="two-column-layout">
+        
+        <!-- Columna izquierda: Dominio y Codominio -->
+        <div class="column-left">
+            <h2>Dominio y Codominio</h2>
+            
+            <div class="white-content-box">
+                <p><b>Dominio:</b> conjunto de los primeros elementos de los pares ordenados.</p>
+                <p><b>Codominio:</b> conjunto donde se encuentran los segundos elementos.</p>
+                
+                <p><b>Ejemplo:</b></p>
+                
+                <p align="center">R = {(1,2),(2,3)}</p>
+                
+                <ul type="circle">
+                    <li>Dominio = {1,2}</li>
+                    <li>Codominio = {2,3}</li>
+                </ul>
+            </div>
+        </div>
 
-<h2>Dominio y codominio</h2>
-    <ul type="circle">
-        <li><b>Dominio:</b> conjunto de los primeros elementos de los pares ordenados.</li>
-        <li><b>Codominio:</b> conjunto donde se encuentran los segundos elementos.</li>
-    </ul>
-<p>Ejemplo:
-    <p align="center">R = {(1,2),(2,3)}</p>
-    <ul type="circle">
-        <li>Dominio = {1,2}</li>
-        <li>Codominio = {2,3}</li>
-    </ul>
-</p>
-<h3><b>Ejemplos de relacion</b></h3>
-<p>Sean:
-    <p align="center">A = {1,2,3}, B = {a,b}</p>
-Una posible relacion es:
-    <p align="center">R = {(1,a),(2,b)}</p>
-Esto indica que:
-    <ul type="circle">
-        <li>1 se relaciona con a</li>
-        <li>2 se relaciona con b</li>
-        <li>3 no se relaciona con ningun elemento</li>
-    </ul>
-</p>
+        <!-- Columna derecha: Ejemplos de relación -->
+        <div class="column-right">
+            <h3>Ejemplos de relación</h3>
+            
+            <div class="light-blue-box">
+                <p>Sean:</p>
+                
+                <p align="center">A = {1,2,3}, B = {a,b}</p>
+                
+                <p>Una posible relación es:</p>
+                
+                <p align="center">R = {(1,a),(2,b)}</p>
+                
+                <p>Esto indica que:</p>
+                
+                <ul type="circle">
+                    <li>1 se relaciona con a</li>
+                    <li>2 se relaciona con b</li>
+                    <li>3 no se relaciona con ningún elemento</li>
+                </ul>
+            </div>
+        </div>
+        
+    </div>
 
-<h2><b>Importancia de las relaciones</b></h2>
-<p><b>Las relaciones permiten:</b>
-    <ul type="circle">
-        <li>describir conexiones entre datos</li>
-        <li>modelar dependencias</li>
-        <li>representar estructuras matemáticas</li>
-        <li>analizar ordenamientos</li>
-        <li>definir equivalencias</li>
-    </ul>
-<b>Por esta razon, las relaciones son fundamentales en:</b>
-    <ul type="circle">
-        <li>matematicas discretas</li>
-        <li>computacion</li>
-        <li>bases de datos</li>
-        <li>grafos</li>
-        <li>programacion</li>
-    </ul>
-</p>
+    <!-- Sección Importancia -->
+    <div class="importance-section">
+        
+        <div class="importance-title-wrapper">
+            <h2>Importancia</h2>
+        </div>
+        
+        <div class="importance-boxes-wrapper">
+            
+            <!-- Caja izquierda -->
+            <div class="importance-left">
+                <h3>Las relaciones permiten:</h3>
+                
+                <div class="white-content-box">
+                    <ul type="circle">
+                        <li>describir conexiones entre datos</li>
+                        <li>modelar dependencias</li>
+                        <li>representar estructuras matemáticas</li>
+                        <li>analizar ordenamientos</li>
+                        <li>definir equivalencias</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Caja derecha -->
+            <div class="importance-right">
+                <h3>Por esta razón, las relaciones son fundamentales en:</h3>
+                
+                <div class="light-blue-box">
+                    <ul type="circle">
+                        <li>matemáticas discretas</li>
+                        <li>computación</li>
+                        <li>bases de datos</li>
+                        <li>grafos</li>
+                        <li>programación</li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+</div>
+
+</body>
+</html>

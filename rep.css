@@ -1,0 +1,1025 @@
+/* ============================================
+   CSS PARA PÁGINA DE RELACIONES - DISEÑO EXACTO
+   ============================================ */
+
+/* --- RESET Y CONFIGURACIÓN BASE --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive;
+    background: #E8E4F0;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    padding-bottom: 50px;
+}
+
+/* --- CÍRCULOS DECORATIVOS DE FONDO --- */
+.circle-deco {
+    position: fixed;
+    border-radius: 50%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Círculos morados */
+.circle-1 {
+    width: 350px;
+    height: 350px;
+    background: rgba(174, 141, 205, 0.25);
+    top: 5%;
+    left: -80px;
+}
+
+.circle-2 {
+    width: 180px;
+    height: 180px;
+    background: rgba(174, 141, 205, 0.15);
+    top: 15%;
+    right: 8%;
+}
+
+.circle-3 {
+    width: 220px;
+    height: 220px;
+    background: rgba(174, 141, 205, 0.2);
+    bottom: 25%;
+    left: 5%;
+}
+
+.circle-4 {
+    width: 140px;
+    height: 140px;
+    background: rgba(174, 141, 205, 0.3);
+    top: 45%;
+    left: 15%;
+}
+
+.circle-5 {
+    width: 280px;
+    height: 280px;
+    background: rgba(174, 141, 205, 0.18);
+    bottom: 10%;
+    right: -60px;
+}
+
+/* Círculos turquesa/teal */
+.circle-6 {
+    width: 200px;
+    height: 200px;
+    background: rgba(88, 129, 134, 0.25);
+    top: 30%;
+    right: 15%;
+}
+
+.circle-7 {
+    width: 160px;
+    height: 160px;
+    background: rgba(88, 129, 134, 0.2);
+    bottom: 35%;
+    right: 5%;
+}
+
+.circle-8 {
+    width: 240px;
+    height: 240px;
+    background: rgba(88, 129, 134, 0.15);
+    top: 60%;
+    left: -40px;
+}
+
+.circle-9 {
+    width: 120px;
+    height: 120px;
+    background: rgba(88, 129, 134, 0.3);
+    top: 8%;
+    left: 25%;
+}
+
+.circle-10 {
+    width: 190px;
+    height: 190px;
+    background: rgba(88, 129, 134, 0.22);
+    bottom: 5%;
+    left: 30%;
+}
+
+/* Círculos grises */
+.circle-11 {
+    width: 150px;
+    height: 150px;
+    background: rgba(111, 117, 140, 0.2);
+    top: 20%;
+    right: 30%;
+}
+
+.circle-12 {
+    width: 100px;
+    height: 100px;
+    background: rgba(111, 117, 140, 0.15);
+    bottom: 45%;
+    left: 40%;
+}
+
+.circle-13 {
+    width: 130px;
+    height: 130px;
+    background: rgba(111, 117, 140, 0.25);
+    top: 70%;
+    right: 20%;
+}
+
+.circle-14 {
+    width: 170px;
+    height: 170px;
+    background: rgba(111, 117, 140, 0.18);
+    bottom: 15%;
+    right: 35%;
+}
+
+.circle-15 {
+    width: 80px;
+    height: 80px;
+    background: rgba(174, 141, 205, 0.12);
+    top: 40%;
+    right: 40%;
+}
+
+.circle-16 {
+    width: 95px;
+    height: 95px;
+    background: rgba(88, 129, 134, 0.18);
+    top: 55%;
+    right: 10%;
+}
+
+.circle-17 {
+    width: 110px;
+    height: 110px;
+    background: rgba(174, 141, 205, 0.22);
+    bottom: 20%;
+    left: 20%;
+}
+
+.circle-18 {
+    width: 85px;
+    height: 85px;
+    background: rgba(111, 117, 140, 0.2);
+    top: 35%;
+    left: 50%;
+}
+
+/* --- BARRA SUPERIOR --- */
+.barra-superior {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #2B3A67;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.botones-izq,
+.botones-der {
+    display: flex;
+    gap: 15px;
+    z-index: 101;
+}
+
+.barra-superior button,
+.barra-superior a button {
+    background-color: #1F2A44;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-family: 'Comic Sans MS', cursive;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.barra-superior button:hover,
+.barra-superior a button:hover {
+    background-color: #588186;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.titulo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 32px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Comic Sans MS', cursive;
+    letter-spacing: 2px;
+    pointer-events: none;
+    text-transform: uppercase;
+}
+
+/* --- MENÚ DESPLEGABLE --- */
+#menu {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background: #2b6167;
+    padding: 20px 30px;
+    list-style: none;
+    z-index: 1000;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    min-width: 280px;
+    max-width: 350px;
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#menu li {
+    margin: 12px 0;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Comic Sans MS', cursive;
+    transition: color 0.3s, padding-left 0.3s;
+    display: block;
+    padding: 8px 0;
+}
+
+#menu a:hover {
+    color: #AE8DCD;
+    padding-left: 10px;
+}
+
+/* --- CONTENEDOR PRINCIPAL --- */
+.content-wrapper {
+    position: relative;
+    z-index: 1;
+    max-width: 1400px;
+    margin: 40px auto;
+    padding: 0 40px;
+}
+
+/* --- CAJA DE DEFINICIÓN PRINCIPAL CON TÍTULO (Imagen 1 - caja blanca con transparencia y borde morado) --- */
+.definition-main {
+    background: rgba(255, 255, 255, 0.85);
+    border: 5px solid #ffffff;
+    border-radius: 30px;
+    padding: 40px 50px;
+    margin: 50px auto;
+    max-width: 1100px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.definition-main h1 {
+    font-size: 52px;
+    color: #2C3E5F;
+    font-family: 'Comic Sans MS', cursive;
+    font-weight: bold;
+    text-align: center;
+    margin: 0 0 25px 0;
+    text-transform: none;
+    letter-spacing: 1px;
+}
+
+.definition-main p {
+    font-size: 17px;
+    color: #2C3E5F;
+    line-height: 1.9;
+    margin-bottom: 15px;
+}
+
+.definition-main p b {
+    font-weight: bold;
+}
+
+.definition-main p[align="center"] {
+    text-align: center;
+    font-weight: bold;
+    font-size: 24px;
+    margin: 20px 0;
+    color: #2C3E5F;
+}
+
+/* --- CAJA "PARES ORDENADOS" (Imagen 1 - caja azul oscuro) --- */
+.pares-box {
+    background: linear-gradient(135deg, #4A5F7F 0%, #3B4D6B 100%);
+    border-radius: 35px;
+    padding: 30px 50px;
+    margin: 40px auto;
+    max-width: 1100px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.pares-box h2 {
+    font-size: 44px;
+    color: #7FA5A8;
+    margin-bottom: 20px;
+    font-family: 'Comic Sans MS', cursive;
+    font-weight: bold;
+}
+
+.pares-box p {
+    font-size: 17px;
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.pares-box p[align="center"] {
+    text-align: center;
+    font-weight: bold;
+    font-size: 28px;
+    margin: 18px 0;
+}
+
+.pares-box ul {
+    margin: 10px 0 10px 30px;
+    color: white;
+}
+
+.pares-box ul li {
+    margin: 6px 0;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+/* --- SECCIÓN DE DOS COLUMNAS (Imagen 2) --- */
+.two-column-layout {
+    display: flex;
+    gap: 30px;
+    margin: 40px auto;
+    max-width: 1400px;
+    align-items: flex-start;
+    position: relative;
+    z-index: 1;
+}
+
+/* Columna izquierda - "Dominio y Codominio" */
+.column-left {
+    flex: 1;
+    background: linear-gradient(135deg, #4A5F7F 0%, #3B4D6B 100%);
+    border-radius: 35px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.column-left h2 {
+    font-size: 38px;
+    color: #7FA5A8;
+    margin-bottom: 25px;
+    font-family: 'Comic Sans MS', cursive;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.white-content-box {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 25px;
+    padding: 30px;
+    margin-top: 15px;
+}
+
+.white-content-box p {
+    font-size: 16px;
+    color: #2C3E5F;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.white-content-box p b {
+    font-weight: bold;
+}
+
+.white-content-box p[align="center"] {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 18px 0;
+}
+
+.white-content-box ul {
+    margin: 15px 0 15px 25px;
+    color: #2C3E5F;
+}
+
+.white-content-box ul li {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+/* Columna derecha - "Ejemplos de relación" */
+.column-right {
+    flex: 1;
+    background: linear-gradient(135deg, #4A5F7F 0%, #3B4D6B 100%);
+    border-radius: 35px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.column-right h3 {
+    font-size: 38px;
+    color: #7FA5A8;
+    margin-bottom: 25px;
+    font-family: 'Comic Sans MS', cursive;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.light-blue-box {
+    background: rgba(232, 244, 248, 0.95);
+    border-radius: 25px;
+    padding: 30px;
+    margin-top: 15px;
+}
+
+.light-blue-box p {
+    font-size: 16px;
+    color: #2C3E5F;
+    line-height: 1.7;
+    margin-bottom: 12px;
+}
+
+.light-blue-box p[align="center"] {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 18px 0;
+}
+
+.light-blue-box ul {
+    margin: 15px 0 15px 25px;
+    color: #2C3E5F;
+}
+
+.light-blue-box ul li {
+    margin: 8px 0;
+    font-size: 16px;
+}
+
+/* --- SECCIÓN "IMPORTANCIA" (Imagen 3) --- */
+.importance-section {
+    margin: 50px auto;
+    max-width: 1400px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.importance-title-wrapper {
+    background: white;
+    display: inline-block;
+    padding: 22px 70px;
+    border-radius: 50px;
+    margin-bottom: 35px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.importance-title-wrapper h2 {
+    font-size: 48px;
+    color: #7FA5A8;
+    font-family: 'Comic Sans MS', cursive;
+    font-weight: bold;
+    margin: 0;
+}
+
+.importance-boxes-wrapper {
+    display: flex;
+    gap: 30px;
+    align-items: stretch;
+}
+
+/* Caja izquierda - "Las relaciones permiten" */
+.importance-left {
+    flex: 1;
+    background: linear-gradient(135deg, #4A5F7F 0%, #3B4D6B 100%);
+    border-radius: 35px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.importance-left h3 {
+    font-size: 34px;
+    color: #7FA5A8;
+    margin-bottom: 25px;
+    font-family: 'Comic Sans MS', cursive;
+    font-weight: bold;
+    font-style: italic;
+    text-align: left;
+}
+
+/* Caja derecha - "Por esta razón..." */
+.importance-right {
+    flex: 1;
+    background: linear-gradient(135deg, #4A5F7F 0%, #3B4D6B 100%);
+    border-radius: 35px;
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.importance-right h3 {
+    font-size: 30px;
+    color: #7FA5A8;
+    margin-bottom: 25px;
+    font-family: 'Comic Sans MS', cursive;
+    font-weight: bold;
+    font-style: italic;
+    text-align: center;
+    line-height: 1.3;
+}
+
+/* --- ESTILOS PARA CONTENIDO SIN CAJAS --- */
+h2 {
+    font-size: 36px;
+    color: #2B3A67;
+    font-family: 'Comic Sans MS', cursive;
+    font-weight: bold;
+    margin: 30px 0 20px;
+    position: relative;
+    z-index: 1;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+h3 {
+    font-size: 28px;
+    color: #2B3A67;
+    font-family: 'Comic Sans MS', cursive;
+    font-weight: bold;
+    margin: 25px 0 15px;
+    position: relative;
+    z-index: 1;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+
+p {
+    font-size: 16px;
+    color: #2B3A67;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    position: relative;
+    z-index: 1;
+}
+
+ul {
+    margin: 15px auto;
+    position: relative;
+    z-index: 1;
+}
+
+ul[type="circle"] li {
+    list-style-type: circle;
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 968px) {
+    .two-column-layout,
+    .importance-boxes-wrapper {
+        flex-direction: column;
+    }
+    
+    .titulo {
+        font-size: 24px;
+    }
+    
+    h1[align="center"] {
+        font-size: 40px;
+    }
+    
+    .definition-main,
+    .pares-box,
+    .column-left,
+    .column-right,
+    .importance-left,
+    .importance-right {
+        padding: 30px 25px;
+    }
+    
+    .seccion-central {
+        flex-direction: column;
+    }
+}
+
+/* ============================================
+   ESTILOS PARA PÁGINA DE REPRESENTACIÓN
+   ============================================ */
+
+/* --- TÍTULO PRINCIPAL CON CAJA GRIS --- */
+.titulo-representacion {
+    background: rgba(200, 205, 220, 0.7);
+    border-radius: 30px;
+    padding: 30px 50px;
+    margin: 50px auto 20px;
+    max-width: 1100px;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.titulo-representacion h1 {
+    font-size: 52px;
+    color: #2C3E5F;
+    font-family: 'Comic Sans MS', cursive;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+/* --- TEXTO INTRODUCTORIO --- */
+.intro-text {
+    text-align: center;
+    max-width: 1000px;
+    margin: 20px auto 40px;
+    padding: 0 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.intro-text p {
+    font-size: 17px;
+    color: #2C3E5F;
+    line-height: 1.8;
+    margin-bottom: 10px;
+}
+
+/* --- SECCIONES CON TÍTULO TURQUESA Y CONTENIDO AZUL --- */
+.seccion-titulo-contenido {
+    margin: 50px auto;
+    max-width: 1400px;
+    position: relative;
+    z-index: 1;
+}
+
+/* Título turquesa redondeado */
+.titulo-turquesa {
+    background: linear-gradient(135deg, #5FA8A8 0%, #4A9494 100%);
+    display: inline-block;
+    padding: 15px 50px;
+    border-radius: 35px 35px 0 0;
+    margin: 0 0 0 40px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.titulo-turquesa h2 {
+    font-size: 42px;
+    color: white;
+    font-family: 'Comic Sans MS', cursive;
+    font-weight: bold;
+    margin: 0;
+    font-style: italic;
+}
+
+/* Caja de contenido azul oscuro */
+.contenido-azul {
+    background: linear-gradient(135deg, #4A5F7F 0%, #3B4D6B 100%);
+    border-radius: 35px;
+    padding: 40px 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.contenido-azul.reverse {
+    flex-direction: row-reverse;
+}
+
+/* Texto dentro de la caja azul */
+.texto-contenido {
+    flex: 1;
+    color: white;
+}
+
+.texto-contenido p {
+    font-size: 17px;
+    color: white;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.texto-contenido p[align="center"] {
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 18px 0;
+}
+
+.texto-contenido h3 {
+    font-size: 22px;
+    color: white;
+    font-family: 'Comic Sans MS', cursive;
+    font-weight: bold;
+    margin: 20px 0 12px 0;
+}
+
+.texto-contenido ul {
+    margin: 15px 0 15px 25px;
+    color: white;
+}
+
+.texto-contenido ul li,
+.texto-contenido ul il {
+    margin: 8px 0;
+    font-size: 17px;
+    color: white;
+    display: list-item;
+    list-style-type: disc;
+}
+
+/* Imagen dentro de la caja azul */
+.imagen-contenido {
+    flex: 0 0 380px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-contenido img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    background: white;
+    padding: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Ajustes para secciones alternas */
+.seccion-central {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px auto;
+    gap: 40px;
+    max-width: 1400px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+.seccion-central h2 {
+    font-size: 42px;
+    color: #7FA5A8;
+    font-family: 'Comic Sans MS', cursive;
+    font-weight: bold;
+    margin-bottom: 20px;
+    font-style: italic;
+}
+
+.seccion-central h3 {
+    font-size: 22px;
+    color: white;
+    font-family: 'Comic Sans MS', cursive;
+    font-weight: bold;
+    margin: 20px 0 12px 0;
+}
+
+.seccion-central p {
+    font-size: 17px;
+    color: white;
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.seccion-central ul {
+    margin: 15px 0 15px 25px;
+    color: white;
+}
+
+.seccion-central ul li,
+.seccion-central ul il {
+    margin: 8px 0;
+    font-size: 17px;
+    color: white;
+}
+
+/* Estilos para columnas específicas */
+.columna1, .columna4 {
+    background: linear-gradient(135deg, #4A5F7F 0%, #3B4D6B 100%);
+    border-radius: 35px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+/* Título turquesa dentro de las columnas */
+.columna1::before,
+.columna4::before {
+    content: attr(data-titulo);
+    position: absolute;
+    top: -25px;
+    left: 40px;
+    background: linear-gradient(135deg, #5FA8A8 0%, #4A9494 100%);
+    padding: 15px 50px;
+    border-radius: 35px 35px 0 0;
+    font-size: 42px;
+    color: white;
+    font-family: 'Comic Sans MS', cursive;
+    font-weight: bold;
+    font-style: italic;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.columna2, .columna3 {
+    flex: 0 0 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.columna2 img, .columna3 img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* --- RESPONSIVE PARA REPRESENTACIÓN --- */
+@media (max-width: 968px) {
+    .seccion-central {
+        flex-direction: column;
+    }
+    
+    .contenido-azul,
+    .contenido-azul.reverse {
+        flex-direction: column;
+    }
+    
+    .imagen-contenido {
+        flex: 0 0 auto;
+        width: 100%;
+    }
+    
+    .columna1, .columna2, .columna3, .columna4 {
+        width: 100%;
+        flex: 0 0 auto;
+    }
+    
+    .titulo-representacion h1 {
+        font-size: 38px;
+    }
+    
+    .titulo-turquesa h2 {
+        font-size: 32px;
+    }
+}
+
+/* ============================================
+   CLASES REUTILIZABLES DEL UTILITARIO
+   ============================================ */
+
+/* --- UTILIDADES GENERALES --- */
+.seccion-central {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 10px;
+    gap: 40px;
+}
+
+.columna {
+    width: 30%;
+}
+
+.columna1 {
+    width: 60%;
+}
+
+.columna2 {
+    width: 40%;
+}
+
+.columna3 {
+    width: 40%;
+}
+
+.columna4 {
+    width: 60%;
+}
+
+.columnamat {
+    width: 48%;
+}
+
+.imagen-centro {
+    width: 30%;
+    text-align: center;
+}
+
+.imagen-centro img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- BLOQUES DE CÓDIGO --- */
+.bloque-codigo {
+    position: relative;
+    max-width: 700px;
+}
+
+.bloque-codigo button {
+    margin-top: 8px;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+/* Contenedor general */
+.contenedor-codigos {
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 40px 0;
+}
+
+/* Cada bloque */
+.bloque-codigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 420px;
+}
+
+/* Bloque de código */
+.bloque-codigo pre {
+    width: 100%;
+    background-color: #d51a1a;
+    color: #000000;
+    padding: 20px;
+    border-radius: 10px;
+    max-height: 350px;
+    overflow: auto;
+    font-size: 14px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+}
+
+/* Botón */
+.bloque-codigo button {
+    margin-top: 12px;
+    padding: 8px 16px;
+    background-color: #2d2d2d;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.bloque-codigo button:hover {
+    background-color: #444;
+}
+
+/* --- RESPONSIVE UTILITIES --- */
+@media (max-width: 768px) {
+    .seccion-central {
+        flex-direction: column;
+    }
+    
+    .columna,
+    .columna1,
+    .columna2,
+    .columna3,
+    .columna4,
+    .columnamat {
+        width: 100%;
+    }
+    
+    .contenedor-codigos {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+}

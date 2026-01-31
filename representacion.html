@@ -2,18 +2,37 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Relaciones</title>
-
-    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Representación de Relaciones</title>
+    <link rel="stylesheet" href="rep.css">
 </head>
 
 <body>
 
+<!-- Círculos decorativos de fondo -->
+<div class="circle-deco circle-1"></div>
+<div class="circle-deco circle-2"></div>
+<div class="circle-deco circle-3"></div>
+<div class="circle-deco circle-4"></div>
+<div class="circle-deco circle-5"></div>
+<div class="circle-deco circle-6"></div>
+<div class="circle-deco circle-7"></div>
+<div class="circle-deco circle-8"></div>
+<div class="circle-deco circle-9"></div>
+<div class="circle-deco circle-10"></div>
+<div class="circle-deco circle-11"></div>
+<div class="circle-deco circle-12"></div>
+<div class="circle-deco circle-13"></div>
+<div class="circle-deco circle-14"></div>
+<div class="circle-deco circle-15"></div>
+<div class="circle-deco circle-16"></div>
+<div class="circle-deco circle-17"></div>
+<div class="circle-deco circle-18"></div>
+
 <!-- Barra superior -->
 <div class="barra-superior">
-
     <div class="botones-izq">
-    <button onclick="menu.hidden = !menu.hidden">≡</button>
+        <button onclick="menu.hidden = !menu.hidden">≡</button>
         <a href="index.html">
             <button>Inicio</button>
         </a>
@@ -28,9 +47,8 @@
         <a href="index.html#contactanos">
             <button>Contáctanos</button>
         </a>
-    <button onclick="location.href='matlab.html'">MatLab</button>
+        <button onclick="location.href='matlab.html'">MatLab</button>
     </div>
-
 </div>
 
 <ul id="menu" hidden>
@@ -45,113 +63,115 @@
     <li><a href="matlab.html">Matlab</a></li>
 </ul>
 
-
-
-<h1 align="center">Representacion de las Relaciones</h1>
-<p>El representar las relaciones de otra forma nos facilita el analisis de sus propiedades.<br>
-Una <b>relacion </b>puede <b>representarse</b> de distintas formas:</p>
-
-<div class="seccion-central">
-
-    <div class="columna1">
-        <h2>Pares Ordenados:</h2>
-        <p>Dados dos conjuntos no vacíos A y B, una relación R es un conjunto de pares ordenados en donde el primer
-        elemento "a" esta relacionado con el segundo elemento "b" por medio de cierta propiedad o característica.
-        La relación se indica como aRb:</p>
-        <p align="center">R = {(a, b) | a ϵ A y b ϵ B}</p>
-        <h3><b>Ejemplo:</b></h3>
-        <p>
-            Sean los conjuntos:</p>
-            <p>A = {a | a ϵ Z; 10 menor que a menor que 30}<br>
-            B = {b | b ϵ Z+; b menor que 20}</p>
-            <p>y sea R una relación de A en B, en donde el elemento a ϵ A es divisible entre 13 y b ϵ B es primo.</p>
-            <p>Como resultando se obtiene la siguiente relación:</p>
-                <p>R = {(13, 2), (13, 3), (13, 5), (13, 7), (13, 11), (13, 13), (13, 17), (13, 19), (26, 2), (26, 3), (26, 5), (26, 7), (26, 11), (26, 13), (26, 17), (26,19)}</p>
-            </p>
+<!-- Contenido principal -->
+<div class="content-wrapper">
+    
+    <!-- Título principal en caja gris -->
+    <div class="titulo-representacion">
+        <h1>Representación de las Relaciones</h1>
+        <br>
+        <p align="center">El representar las relaciones de otra forma nos facilita el análisis de sus propiedades.</p>
+        <p align="center">Una <b>relación</b> puede <b>representarse</b> de distintas formas:</p>
     </div>
+
+    <!-- Sección: Pares Ordenados -->
+    <div class="seccion-central">
+        <div class="columna1" data-titulo="Pares Ordenados">
+            <br>
+            <p>Dados dos conjuntos no vacíos A y B, una relación R es un conjunto de pares ordenados en donde el primer
+            elemento "a" está relacionado con el segundo elemento "b" por medio de cierta propiedad o característica.
+            La relación se indica como aRb:</p>
+            <p align="center">R = {(a, b) | a ∈ A y b ∈ B}</p>
+            
+            <h3><b>Ejemplo:</b></h3>
+            <p>Sean los conjuntos:</p>
+            <p>A = {a | a ∈ Z; 10 &lt; a &lt; 30}<br>
+            B = {b | b ∈ Z+; b &lt; 20}</p>
+            <p>y sea R una relación de A en B, en donde el elemento a ∈ A es divisible entre 13 y b ∈ B es primo.</p>
+            <p>Como resultado se obtiene la siguiente relación:</p>
+            <p>R = {(13, 2), (13, 3), (13, 5), (13, 7), (13, 11), (13, 13), (13, 17), (13, 19), (26, 2), (26, 3), (26, 5), (26, 7), (26, 11), (26, 13), (26, 17), (26,19)}</p>
+        </div>
 
         <div class="columna2">
-            <img src="imagenes/paresord.png" alt="Imagen del proyecto">
+            <img src="imagenes/paresord.png" alt="Pares Ordenados">
         </div>
-</div>
-
-<div class="seccion-central">
-
-    <div class="columna3">
-        <img src="imagenes/tablas.png" alt="Imagen del proyecto" width="340px" height="auto">
     </div>
-    <div class="columna4">
-        <h2>Tablas:</h2>
-        <p>Una tabla organiza la información en filas horizontales y columnas verticales. La primera fila o columna suele decir lo que representan los números.</p>
-        <h3><b>Ejemplo:</b></h3>
-            <p>
-            La siguiente tabla muestra una relación entre el precio en dólares y la cantidad de mangos
+
+    <!-- Sección: Tablas -->
+    <div class="seccion-central">
+        <div class="columna3">
+            <img src="imagenes/tablas.png" alt="Tablas" width="340px" height="auto">
+        </div>
+        
+        <div class="columna4" data-titulo="Tablas">
+            <br>
+            <p>Una tabla organiza la información en filas horizontales y columnas verticales. La primera fila o columna suele decir lo que representan los números.</p>
+            
+            <h3><b>Ejemplo:</b></h3>
+            <p>La siguiente tabla muestra una relación entre el precio en dólares y la cantidad de mangos
             que se pueden comprar. Por ejemplo, cuando el precio es de <b>2 dólares</b>, se obtienen
             <b>3 mangos</b>. Si el precio aumenta a <b>4 dólares</b>, la cantidad de mangos aumenta a
-            <b>6</b>.
-            </p>
+            <b>6</b>.</p>
 
-            <p>
-            Se observa que al aumentar el dinero, aumenta proporcionalmente la cantidad de mangos,
+            <p>Se observa que al aumentar el dinero, aumenta proporcionalmente la cantidad de mangos,
             manteniéndose una relación constante. Esta tabla permite visualizar de forma ordenada
-            cómo varía una cantidad en función de la otra.
-            </p>
-    </div>   
-</div>
+            cómo varía una cantidad en función de la otra.</p>
+        </div>   
+    </div>
 
-<div class="seccion-central">
-
-    <div class="columna1">
-        <h2>Digraficas:</h2>
-        <p>Las digráficas o diagramas graficos son representaciones visuales de una 
+    <!-- Sección: Digráficas -->
+    <div class="seccion-central">
+        <div class="columna1" data-titulo="Digráficas">
+                        <br>
+            <p>Las digráficas o diagramas gráficos son representaciones visuales de una 
             relación entre dos conjuntos de datos usando ejes, puntos o líneas en un plano.</p>
-        Las digráficas permiten:
+            
+            <p>Las digráficas permiten:</p>
             <ul type="circle">
-            <il>Visualizar fácilmente cómo cambia una variable cuando cambia la otra.</il><br>
-            <il>Identificar si la relación es creciente, decreciente o constante.</il><br>
-            <il>Comparar datos y detectar patrones o tendencias.</il><br>
-            <il>Entender relaciones sin necesidad de leer muchos números en una tabla.</il><br>
-        </ul>
+                <li>Visualizar fácilmente cómo cambia una variable cuando cambia la otra.</li>
+                <li>Identificar si la relación es creciente, decreciente o constante.</li>
+                <li>Comparar datos y detectar patrones o tendencias.</li>
+                <li>Entender relaciones sin necesidad de leer muchos números en una tabla.</li>
+            </ul>
 
-        <h3><b>Ejemplo:</b></h3>
-
-        <p>
-            El siguiente dígrafo representa una relación entre cuatro elementos del conjunto
-            {1, 2, 3, 4}.</p>
-        <p>Cada círculo es un elemento
-            y cada flecha indica una relación dirigida de un elemento a otro. Esta representación permite
+            <h3><b>Ejemplo:</b></h3>
+            <p>El siguiente dígrafo representa una relación entre cuatro elementos del conjunto {1, 2, 3, 4}.</p>
+            <p>Cada círculo es un elemento y cada flecha indica una relación dirigida de un elemento a otro. Esta representación permite
             visualizar fácilmente cómo se conectan los elementos y comprender la relación sin listar todos
             los pares ordenados.</p>
-    </div>
+        </div>
 
         <div class="columna2">
-            <img src="imagenes/digrafos.png" alt="Imagen del proyecto">
+            <img src="imagenes/digrafos.png" alt="Digráficas">
         </div>
-</div>
-
-<div class="seccion-central">
-
-    <div class="columna3">
-        <img src="imagenes/matrices.png" alt="Imagen del proyecto" width="340px" height="auto">
     </div>
-    <div class="columna4">
-        <h2>Matrices:</h2>
+
+    <!-- Sección: Matrices -->
+    <div class="seccion-central">
+        <div class="columna3">
+            <img src="imagenes/matrices.png" alt="Matrices" width="340px" height="auto">
+        </div>
+        
+        <div class="columna4" data-titulo="Matrices">
+            <br>
             <p>La representación matricial de una relación consiste en usar una matriz para mostrar qué
             elementos se relacionan entre sí. Las filas representan el elemento de salida y las columnas
             el elemento de llegada. Si existe relación entre dos elementos, se coloca un 1; si no existe,
             se coloca un 0. Esta forma de representación permite identificar relaciones de manera ordenada
             y facilitar su análisis.</p>
-        <h3><b>Ejemplo:</b></h3>
-            <p>
-            La siguiente matriz representa una relación entre los conjuntos A = {1, 2, 3} y
+            
+            <h3><b>Ejemplo:</b></h3>
+            <p>La siguiente matriz representa una relación entre los conjuntos A = {1, 2, 3} y
             B = {1, 2}. Las filas corresponden a los elementos del conjunto A y las columnas a
-            los elementos del conjunto B.
-            </p>
+            los elementos del conjunto B.</p>
 
-            <p>
-            Según la matriz, el elemento 1 de A se relaciona con los elementos 1 y 2 de B.
+            <p>Según la matriz, el elemento 1 de A se relaciona con los elementos 1 y 2 de B.
             El elemento 2 de A se relaciona con el elemento 1 de B.
-            El elemento 3 de A se relaciona con el elemento 2 de B.
-            </p>
-    </div>   
+            El elemento 3 de A se relaciona con el elemento 2 de B.</p>
+        </div>   
+    </div>
+
 </div>
+
+</body>
+</html>

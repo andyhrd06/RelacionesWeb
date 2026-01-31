@@ -2,37 +2,49 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Relaciones</title>
-
-    <link rel="stylesheet" href="index.css">
+    <title>Propiedades de las Relaciones</title>
+    <link rel="stylesheet" href="prop.css">
 </head>
 
 <body>
 
-<!-- Barra superior -->
-<div class="barra-superior">
+<!-- CÍRCULOS DECORATIVOS -->
+<div class="circle-deco circle-1"></div>
+<div class="circle-deco circle-2"></div>
+<div class="circle-deco circle-3"></div>
+<div class="circle-deco circle-4"></div>
+<div class="circle-deco circle-5"></div>
+<div class="circle-deco circle-6"></div>
+<div class="circle-deco circle-7"></div>
+<div class="circle-deco circle-8"></div>
+<div class="circle-deco circle-9"></div>
+<div class="circle-deco circle-10"></div>
+<div class="circle-deco circle-11"></div>
+<div class="circle-deco circle-12"></div>
+<div class="circle-deco circle-13"></div>
+<div class="circle-deco circle-14"></div>
+<div class="circle-deco circle-15"></div>
+<div class="circle-deco circle-16"></div>
+<div class="circle-deco circle-17"></div>
+<div class="circle-deco circle-18"></div>
 
+<!-- BARRA SUPERIOR -->
+<div class="barra-superior">
     <div class="botones-izq">
-    <button onclick="menu.hidden = !menu.hidden">≡</button>
-        <a href="index.html">
-            <button>Inicio</button>
-        </a>
-        <a href="index.html#quienes-somos">
-            <button>Sobre Nosotros</button>
-        </a>
+        <button onclick="menu.hidden = !menu.hidden">≡</button>
+        <a href="index.html"><button>Inicio</button></a>
+        <a href="index.html#quienes-somos"><button>Sobre Nosotros</button></a>
     </div>
 
     <div class="titulo">Relaciones</div>
 
     <div class="botones-der">
-        <a href="index.html#contactanos">
-            <button>Contáctanos</button>
-        </a>
-    <button onclick="location.href='matlab.html'">MatLab</button>
+        <a href="index.html#contactanos"><button>Contáctanos</button></a>
+        <button onclick="location.href='matlab.html'">MatLab</button>
     </div>
-
 </div>
 
+<!-- MENÚ -->
 <ul id="menu" hidden>
     <li><a href="index.html">Página principal</a></li>
     <li><a href="queSon.html">¿Qué son las relaciones?</a></li>
@@ -45,79 +57,137 @@
     <li><a href="matlab.html">Matlab</a></li>
 </ul>
 
-<h1 align="center">Propiedades
-    <br>de las Relaciones</h1>
-<p>Existen varias propiedades asociadas a las relaciones, las cuales son:
-    <ul>
-        <li>Relacion Reflexiva</li><li>Relacion Irreflexiva</li>
-        <li>Relacion Simetrica</li><li>Relacion Antisimetrica</li>
-        <li>Relacion Asimetrica</li><li>Relacion Transitiva</li>
-    </ul>
-</p>
-<p>Sea A un conjunto y R ⊆ A X A una relacion.</p>
-<h2>Relacion Reflexiva</h2>
-<h3><b>Definicion</b></h3>
-<p>Una relacion es <b>reflexiva</b> si <b>todo elemento del conjunto se relaciona consigo mismo.</b></p>
-<h4><b>Condicion matematica</b></h4>
-<p align="center">∀𝑎 ∈ 𝐴, (𝑎,𝑎) ∈ 𝑅 </p>
-<p>Deben existir <b>todos los pares (a,a).</b></p>
-<h4><b>Ejemplo:</b></h4>
-<p>
-    A = {1,2,3} 
-    R = {(1,1), (2,2), (3,3)} 
-    ✔ Reflexiva </p>
+<!-- CONTENIDO -->
+<h1 align="center">Propiedades<br>de las Relaciones</h1>
 
-<h2>Relacion Irreflexiva</h2>
-<h3><b>Definicion</b></h3>
-<p>Una relacion es <b>irreflexiva</b> si <b>ningun elemento del conjunto se relaciona consigo mismo.</b></p>
-<h4><b>Condicion matematica</b></h4>
-<p align="center">∀𝑎 ∈ 𝐴, (𝑎,𝑎) ∉ 𝑅 </p>
-<h4><b>Ejemplo:</b></h4>
-<p>
-    R = {(1,2), (2,3)} 
-    ✔ Irreflexiva </p>
+<p>Existen varias propiedades asociadas a las relaciones, las cuales son:</p>
 
-<h2>Relacion Simetrica</h2>
-<h3><b>Definicion</b></h3>
-<p>Una relacion es <b>simetrica</b> si <b>al existir un par, tambien existe el inverso.</b></p>
-<h4><b>Condicion matematica</b></h4>
-<p align="center">∀𝑎,b ∈ 𝐴, (𝑎,b) ∈ 𝑅 ⇒ (𝑏,𝑎) ∈ 𝑅 </p>
-<p>La flechas deben ir en ambos sentidos.</p>
-<h4><b>Ejemplo:</b></h4>
-<p>
-    R = {(1,2),(2,1)} 
-    ✔ Simetrica </p>
+<ul>
+    <li>Relación Reflexiva</li>
+    <li>Relación Irreflexiva</li>
+    <li>Relación Simétrica</li>
+    <li>Relación Antisimétrica</li>
+    <li>Relación Asimétrica</li>
+    <li>Relación Transitiva</li>
+</ul>
 
-<h2>Relacion Antisimetrica</h2>
-<h3><b>Definicion</b></h3>
-<p>Una relacion es <b>antisimetrica</b> si <b>no existen pares opuestos distintos.</b></p>
-<h4><b>Condicion matematica</b></h4>
-<p align="center">(𝑎, 𝑏) ∈ 𝑅 ∧ (𝑏,𝑎) ∈ 𝑅 ⇒ 𝑎 = 𝑏</p>
-<p>Solo pueden existir flechas dobles si son lazos (a,a).</p>
-<h4><b>Ejemplo:</b></h4>
-<p>
-    R = {(1,2),(2,3),(3,3)} 
-    ✔ Antisimetrica </p>
+<p>Sea A un conjunto y R ⊆ A × A una relación.</p>
 
-<h2>Relacion Asimetrica</h2>
-<h3><b>Definicion</b></h3>
-<p>Una relacion es <b>asimetrica</b> si <b>nunca ocurre el par inverso.</b></p>
-<h4><b>Condicion matematica</b></h4>
-<p align="center">(𝑎, 𝑏) ∈ 𝑅 ⇒ (𝑏,𝑎) ∉ 𝑅</p>
-<p>Ademas:</p>
-<p align="center">(𝑎, 𝑎) ∉ 𝑅</p>
-<h4><b>Ejemplo:</b></h4>
-<p>
-    R = {(1,2),(2,3)} 
-    ✔ Asimetrica </p>
+<!-- REFLEXIVA -->
+<h2>Relación Reflexiva</h2>
 
-<h2>Relacion Transitiva</h2>
-<h3><b>Definicion</b></h3>
-<p>Una relacion es <b>transitiva</b> si <b>las relaciones se encadenan.</b></p>
-<h4><b>Condicion matematica</b></h4>
-<p align="center">(𝑎, 𝑏) ∈ 𝑅 ∧ (𝑏,𝑐) ∈ 𝑅 ⇒ (𝑎,𝑐) ∈ 𝑅</p>
-<p>Si hay un camino de dos pasos, debe existir el directo.</p>
-<h4><b>Ejemplo:</b></h4>
-<p>
-    R = {(1,2),(2,3),(1,3)} 
-    ✔ Transitiva </p>
+<h3>Definición</h3>
+<div class="box">
+    Una relación es <b>reflexiva</b> si todo elemento del conjunto se relaciona consigo mismo.
+</div>
+
+<h4>Condición matemática</h4>
+<div class="box condicion">
+    ∀a ∈ A, (a,a) ∈ R
+</div>
+
+<h4>Ejemplo</h4>
+<div class="ejemplo-box">
+    <b>A</b> = {1,2,3}<br>
+    <b>R</b> = {(1,1),(2,2),(3,3)}<br>
+    <span class="check">✔ Reflexiva</span>
+</div>
+
+<!-- IRREFLEXIVA -->
+<h2>Relación Irreflexiva</h2>
+
+<h3>Definición</h3>
+<div class="box">
+    Una relación es <b>irreflexiva</b> si ningún elemento del conjunto se relaciona consigo mismo.
+</div>
+
+<h4>Condición matemática</h4>
+<div class="box condicion">
+    ∀a ∈ A, (a,a) ∉ R
+</div>
+
+<h4>Ejemplo</h4>
+<div class="ejemplo-box">
+    <b>R</b> = {(1,2),(2,3)}<br>
+    <span class="check">✔ Irreflexiva</span>
+</div>
+
+<!-- SIMÉTRICA -->
+<h2>Relación Simétrica</h2>
+
+<h3>Definición</h3>
+<div class="box">
+    Una relación es <b>simétrica</b> si al existir un par, también existe su inverso.
+</div>
+
+<h4>Condición matemática</h4>
+<div class="box condicion">
+    ∀a,b ∈ A, (a,b) ∈ R ⇒ (b,a) ∈ R
+</div>
+
+<h4>Ejemplo</h4>
+<div class="ejemplo-box">
+    <b>R</b> = {(1,2),(2,1)}<br>
+    <span class="check">✔ Simétrica</span>
+</div>
+
+<!-- ANTISIMÉTRICA -->
+<h2>Relación Antisimétrica</h2>
+
+<h3>Definición</h3>
+<div class="box">
+    Una relación es <b>antisimétrica</b> si no existen pares opuestos distintos.
+</div>
+
+<h4>Condición matemática</h4>
+<div class="box condicion">
+    (a,b) ∈ R ∧ (b,a) ∈ R ⇒ a = b
+</div>
+
+<h4>Ejemplo</h4>
+<div class="ejemplo-box">
+    <b>R</b> = {(1,2),(2,3),(3,3)}<br>
+    <span class="check">✔ Antisimétrica</span>
+</div>
+
+<!-- ASIMÉTRICA -->
+<h2>Relación Asimétrica</h2>
+
+<h3>Definición</h3>
+<div class="box">
+    Una relación es <b>asimétrica</b> si nunca ocurre el par inverso.
+</div>
+
+<h4>Condición matemática</h4>
+<div class="box condicion">
+    (a,b) ∈ R ⇒ (b,a) ∉ R<br>
+    (a,a) ∉ R
+</div>
+
+<h4>Ejemplo</h4>
+<div class="ejemplo-box">
+    <b>R</b> = {(1,2),(2,3)}<br>
+    <span class="check">✔ Asimétrica</span>
+</div>
+
+<!-- TRANSITIVA -->
+<h2>Relación Transitiva</h2>
+
+<h3>Definición</h3>
+<div class="box">
+    Una relación es <b>transitiva</b> si las relaciones se encadenan.
+</div>
+
+<h4>Condición matemática</h4>
+<div class="box condicion">
+    (a,b) ∈ R ∧ (b,c) ∈ R ⇒ (a,c) ∈ R
+</div>
+
+<h4>Ejemplo</h4>
+<div class="ejemplo-box">
+    <b>R</b> = {(1,2),(2,3),(1,3)}<br>
+    <span class="check">✔ Transitiva</span>
+</div>
+
+</body>
+</html>

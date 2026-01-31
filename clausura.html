@@ -4,10 +4,29 @@
     <meta charset="UTF-8">
     <title>Relaciones</title>
 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="clau.css">
 </head>
 
 <body>
+
+<div class="circle-deco circle-1"></div>
+<div class="circle-deco circle-2"></div>
+<div class="circle-deco circle-3"></div>
+<div class="circle-deco circle-4"></div>
+<div class="circle-deco circle-5"></div>
+<div class="circle-deco circle-6"></div>
+<div class="circle-deco circle-7"></div>
+<div class="circle-deco circle-8"></div>
+<div class="circle-deco circle-9"></div>
+<div class="circle-deco circle-10"></div>
+<div class="circle-deco circle-11"></div>
+<div class="circle-deco circle-12"></div>
+<div class="circle-deco circle-13"></div>
+<div class="circle-deco circle-14"></div>
+<div class="circle-deco circle-15"></div>
+<div class="circle-deco circle-16"></div>
+<div class="circle-deco circle-17"></div>
+<div class="circle-deco circle-18"></div>
 
 <!-- Barra superior -->
 <div class="barra-superior">
@@ -43,42 +62,91 @@
     <li><a href="matlab.html">Matlab</a></li>
 </ul>
 
-<h1 align="center"><b>Clausura</b></h1>
-<p>La <b>clausura </b>de R es la relacion mas peque;a que contiene a R y cumple una propiedad determinada(reflexiva, simetrica o transitiva).</p>
-<p>Es decir, se <b>agregan los pares ordenados necesarios </b>para que la relacion cumpla dicha propiedad, sin eliminiar los existentes.</p>
+<!-- BLOQUE PRINCIPAL -->
+<div class="clausura-header">
+    <h1>Clausura</h1>
+    <p>
+        La <b>clausura</b> de una relación R es la relación más pequeña que contiene a R
+        y cumple una propiedad determinada (reflexiva, simétrica o transitiva).
+    </p>
+    <p>
+        Es decir, se <b>agregan los pares ordenados necesarios</b> para que la relacion cumpla dicha
+        propiedad, sin eliminar los existentes.
+    </p>
+</div>
 
-<h2>Clausura reflexiva</h2>
-<p>La <b>clausura reflexiva </b>de una relación 𝑅sobre un conjunto 𝐴es la relación que se obtiene al 
-agregar todos los pares (𝑎,𝑎) para cada 𝑎 ∈ 𝐴, de modo que la relación se vuelva reflexiva. </p>
-<p>Formalmente:</p>
-<p align="center">R<sub>r</sub> = 𝑅 ∪{(𝑎,𝑎) ∣ 𝑎 ∈ 𝐴} </p>
-<h3>Ejemplo:</h3>
-<p>Sea:</p>
-<p align="center"> R={1,2,3}<br> R={(1,2),(2,3)} </p>
-<p>Clausura reflexiva:</p>
-<p align="center">R<sub>r</sub>={(1,2),(2,3),(1,1),(2,2),(3,3)}</p>
+<!-- TARJETAS -->
+<div class="clausura-cards">
 
-<h2>Clausura transitiva</h2>
-<p>La <b>clausura transitiva </b> de una relación 𝑅 es la relación que se obtiene al agregar el par 
-(𝑎, 𝑐) siempre que existan (𝑎,𝑏) y (𝑏, 𝑐) en 𝑅, hasta que la relación sea transitiva.</p>
-<p>Formalmente:</p>
-<p align="center">R<sub>t</sub> = 𝑅 ∪{(𝑎,𝑐) ∣ (𝑎,𝑏) ∈ 𝑅 ∧ (𝑏,𝑐) ∈ 𝑅}</p>
-<h3>Ejemplo:</h3>
-<p>Sea:</p>
-<p align="center"> R = {(1,2),(2,3)}</p>
-<p>Como:</p>
-<p align="center"> (1,2) ∧ (2,3) ⇒ (1,3) </p>
-<p>Clausura transitiva:</p>
-<p align="center">R<sub>t</sub>= {(1,2),(2,3),(1,3)}</p>
+    <!-- CARD REFLEXIVA -->
+    <div class="clausura-card">
+        <h2>Clausura reflexiva</h2>
+        <p>
+            La<b> clausura reflexiva </b>de una relación R sobre un conjunto A es la relación
+            que se obtiene al agregar todos los pares <b>(a,a)</b> para cada a ∈ 𝐴, de modo que la relación se vuelve reflexiva.
+        </p>
+        <p>Formalmente:</p>
+        <p align="center">
+            R<sub>r</sub> = R ∪ {(a,a) ∣ a ∈ A}
+        </p>
 
-<h2>Clausura simetrica</h2>
-<p>La <b>clausura simetrica </b>de una relación 𝑅 es la relación que se obtiene al agregar el par 
-(𝑏, 𝑎) cada vez que (𝑎,𝑏) pertenece a 𝑅, de manera que la relación resultante sea simétrica.</p>
-<p>Formalmente:</p>
-<p align="center">R<sub>s</sub>= 𝑅 ∪{(𝑏,𝑎) ∣ (𝑎,𝑏) ∈ 𝑅}  </p>
-<h3>Ejemplo:</h3>
-<p>Sea:</p>
-<p align="center"> R= {(1,2),(2,3)}</p>
-<p>Clausura simetrica:</p>
-<p align="center">R<sub>s</sub>= {(1,2),(2,3),(2,1),(3,2)}</p>
+        <p><b>Ejemplo:</b></p>
+        <p>Sea:</p>
+        <p align="center">
+            R = {(1,2,3)} <br>
+            R = {(1,2),(2,3)} <br>
+        </p>
+        <p>Clausura reflexiva:</p>
+            R<sub>r</sub> = {(1,2),(2,3),(1,1),(2,2),(3,3)}
+        </p>
+    </div>
 
+    <!-- CARD TRANSITIVA -->
+    <div class="clausura-card">
+        <h2>Clausura transitiva</h2>
+        <p>
+            La <b>clausura transitiva</b> de una relación 𝑅 es 
+            la relación que se obtiene al agregar el par <b>(a,c)</b> 
+            siempre que existan (a,b) y (b,c) en R, hasta que la relacion sea transitiva.
+        </p>
+        <p>Formalmente:</p>
+        <p align="center">
+            R<sub>t</sub> = 𝑅 ∪{(𝑎,𝑐) ∣ (𝑎,𝑏) ∈ 𝑅 ∧ (𝑏,𝑐) ∈ 𝑅}
+        </p>
+
+        <p><b>Ejemplo:</b></p>
+        <p>Sea:</p>
+        <p align="center">
+            R = {(1,2),(2,3)} <br>
+        </p>
+        <p>Como:</p>
+            <p align="center">(1,2) ∧ (2,3) ⇒ (1,3)</p>
+        <p>Clausura transitiva:</p>
+            R<sub>t</sub> = {(1,2),(2,3),(1,3)}
+        </p>
+    </div>
+
+    <!-- CARD SIMÉTRICA -->
+    <div class="clausura-card">
+        <h2>Clausura simétrica</h2>
+        <p>
+            La <b>clausura simetrica</b> de una 
+            relacion R es la relación que se obtiene 
+            al agregar el par (b,a) cada vez que (a,b) 
+            pertenece a R, de manera que la relacion resultante 
+            sea simétrica.
+        </p>
+        <p>Formalmente:</p>
+        <p align="center">
+            R<sub>s</sub> = 𝑅 ∪{(𝑏,𝑎) ∣ (𝑎,𝑏) ∈ 𝑅}
+        </p>
+
+        <p><b>Ejemplo:</b></p>
+        <p>Sea:</p>
+        <p align="center">
+            R = {(1,2),(2,3)} <br></p>
+        <p>Clausura simetrica:</p>
+        <p align="center">R<sub>s</sub> = {(1,2),(2,3),(2,1),(3,2)}</p>
+    </div>
+
+</div>
