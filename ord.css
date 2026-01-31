@@ -1,3 +1,6 @@
+n · CSS
+Copiar
+
 /* ============================================
    PÁGINA: RELACIONES DE ORDEN
    (MISMA PALETA QUE PROPIEDADES)
@@ -10,7 +13,7 @@
 }
 
 body {
-    font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+    font-family: 'Poppins', sans-serif;
     background: #E8E4F0;
     min-height: 100vh;
     color: #06062a;
@@ -67,8 +70,9 @@ body {
     border: none;
     padding: 10px 20px;
     border-radius: 25px;
+    font-family: 'Chewy', cursive;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: normal;
     cursor: pointer;
     transition: .3s;
 }
@@ -85,6 +89,7 @@ body {
     font-size: 32px;
     color: white;
     font-weight: bold;
+    font-family: 'Atma', cursive;
 }
 
 /* ===== MENÚ ===== */
@@ -104,6 +109,7 @@ body {
     text-decoration: none;
     display: block;
     margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* ===== TÍTULOS ===== */
@@ -115,6 +121,7 @@ h1 {
     margin: 50px auto 30px;
     font-size: 48px;
     text-align: center;
+    font-family: 'Atma', cursive;
 }
 
 h2 {
@@ -125,11 +132,13 @@ h2 {
     max-width: 800px;
     margin: 60px auto 25px;
     font-size: 36px;
+    font-family: 'Atma', cursive;
 }
 
 h3 {
     max-width: 900px;
     margin: 25px auto 10px;
+    font-family: 'Chewy', cursive;
 }
 
 /* ===== TEXTO ===== */

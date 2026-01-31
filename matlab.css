@@ -1,0 +1,509 @@
+ab · CSS
+Copiar
+
+/* ============================================
+   CSS ESPECÍFICO PARA LA PÁGINA MATLAB
+   ============================================ */
+
+/* --- RESET Y CONFIGURACIÓN BASE --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #E8E4F0;
+    min-height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+    padding-bottom: 50px;
+}
+
+/* --- CÍRCULOS DECORATIVOS DE FONDO --- */
+.circle-deco {
+    position: fixed;
+    border-radius: 50%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+/* Círculos morados */
+.circle-1 {
+    width: 350px;
+    height: 350px;
+    background: rgba(174, 141, 205, 0.25);
+    top: 5%;
+    left: -80px;
+}
+
+.circle-2 {
+    width: 180px;
+    height: 180px;
+    background: rgba(174, 141, 205, 0.15);
+    top: 15%;
+    right: 8%;
+}
+
+.circle-3 {
+    width: 220px;
+    height: 220px;
+    background: rgba(174, 141, 205, 0.2);
+    bottom: 25%;
+    left: 5%;
+}
+
+.circle-4 {
+    width: 140px;
+    height: 140px;
+    background: rgba(174, 141, 205, 0.3);
+    top: 45%;
+    left: 15%;
+}
+
+.circle-5 {
+    width: 280px;
+    height: 280px;
+    background: rgba(174, 141, 205, 0.18);
+    bottom: 10%;
+    right: -60px;
+}
+
+/* Círculos turquesa */
+.circle-6 {
+    width: 200px;
+    height: 200px;
+    background: rgba(88, 129, 134, 0.25);
+    top: 30%;
+    right: 15%;
+}
+
+.circle-7 {
+    width: 160px;
+    height: 160px;
+    background: rgba(88, 129, 134, 0.2);
+    bottom: 35%;
+    right: 5%;
+}
+
+.circle-8 {
+    width: 240px;
+    height: 240px;
+    background: rgba(88, 129, 134, 0.15);
+    top: 60%;
+    left: -40px;
+}
+
+.circle-9 {
+    width: 120px;
+    height: 120px;
+    background: rgba(88, 129, 134, 0.3);
+    top: 8%;
+    left: 25%;
+}
+
+.circle-10 {
+    width: 190px;
+    height: 190px;
+    background: rgba(88, 129, 134, 0.22);
+    bottom: 5%;
+    left: 30%;
+}
+
+/* Círculos grises */
+.circle-11 {
+    width: 150px;
+    height: 150px;
+    background: rgba(111, 117, 140, 0.2);
+    top: 20%;
+    right: 30%;
+}
+
+.circle-12 {
+    width: 100px;
+    height: 100px;
+    background: rgba(111, 117, 140, 0.15);
+    bottom: 45%;
+    left: 40%;
+}
+
+.circle-13 {
+    width: 130px;
+    height: 130px;
+    background: rgba(111, 117, 140, 0.25);
+    top: 70%;
+    right: 20%;
+}
+
+.circle-14 {
+    width: 170px;
+    height: 170px;
+    background: rgba(111, 117, 140, 0.18);
+    bottom: 15%;
+    right: 35%;
+}
+
+/* Círculos adicionales pequeños */
+.circle-15 {
+    width: 80px;
+    height: 80px;
+    background: rgba(174, 141, 205, 0.12);
+    top: 40%;
+    right: 40%;
+}
+
+.circle-16 {
+    width: 95px;
+    height: 95px;
+    background: rgba(88, 129, 134, 0.18);
+    top: 55%;
+    right: 10%;
+}
+
+.circle-17 {
+    width: 110px;
+    height: 110px;
+    background: rgba(174, 141, 205, 0.22);
+    bottom: 20%;
+    left: 20%;
+}
+
+.circle-18 {
+    width: 85px;
+    height: 85px;
+    background: rgba(111, 117, 140, 0.2);
+    top: 35%;
+    left: 50%;
+}
+
+/* --- BARRA SUPERIOR --- */
+.barra-superior {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 30px;
+    background-color: #2B3A67;
+    position: relative;
+    z-index: 100;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.botones-izq,
+.botones-der {
+    display: flex;
+    gap: 15px;
+    z-index: 101;
+}
+
+.barra-superior button,
+.barra-superior a button {
+    background-color: #1F2A44;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    font-family: 'Chewy', cursive;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.barra-superior button:hover,
+.barra-superior a button:hover {
+    background-color: #588186;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.titulo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    font-family: 'Atma', cursive;
+    letter-spacing: 2px;
+    pointer-events: none;
+    text-transform: uppercase;
+}
+
+/* --- MENÚ DESPLEGABLE --- */
+#menu {
+    position: absolute;
+    top: 60px;
+    left: 20px;
+    background-color: #2B3A67;
+    padding: 20px 30px;
+    list-style: none;
+    z-index: 1000;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    min-width: 280px;
+    max-width: 350px;
+    animation: slideDown 0.3s ease-out;
+}
+
+@keyframes slideDown {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#menu li {
+    margin: 12px 0;
+}
+
+#menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    transition: color 0.3s, padding-left 0.3s;
+    display: block;
+    padding: 8px 0;
+}
+
+#menu a:hover {
+    color: #AE8DCD;
+    padding-left: 10px;
+}
+
+/* --- CONTENEDOR PRINCIPAL --- */
+.main-content {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* --- TÍTULO Y DESCRIPCIÓN --- */
+h2[align="center"] {
+    font-size: 52px;
+    color: #2B3A67;
+    text-align: center;
+    margin: 40px auto 30px;
+    font-family: 'Atma', cursive;
+    font-weight: 700;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 25px 50px;
+    border-radius: 30px;
+    display: block;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body > p {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    font-size: 18px;
+    color: #2B3A67;
+    line-height: 1.8;
+    position: relative;
+    z-index: 1;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+/* --- CONTENEDOR DE CÓDIGOS (DOS COLUMNAS) --- */
+.contenedor-codigos {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    max-width: 1600px;
+    margin: 40px auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+}
+
+/* --- BLOQUE DE CÓDIGO INDIVIDUAL --- */
+.bloque-codigo {
+    background: linear-gradient(135deg, #3D5A80 0%, #2B3A67 100%);
+    border-radius: 25px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 0;
+    overflow: hidden;
+}
+
+.bloque-codigo:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
+}
+
+/* Alternar colores para variedad visual */
+.bloque-codigo:nth-child(odd) {
+    background: linear-gradient(135deg, #3D5A80 0%, #2B3A67 100%);
+}
+
+.bloque-codigo:nth-child(even) {
+    background: linear-gradient(135deg, #4A6B7A 0%, #588186 100%);
+}
+
+.bloque-codigo:nth-child(4n+3) {
+    background: linear-gradient(135deg, #7B6A8E 0%, #AE8DCD 100%);
+}
+
+.bloque-codigo:nth-child(4n+4) {
+    background: linear-gradient(135deg, #5F7B8A 0%, #6F758C 100%);
+}
+
+/* --- TÍTULO DEL BLOQUE --- */
+.bloque-codigo h3 {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 15px;
+    font-family: 'Chewy', cursive;
+    font-weight: 400;
+    text-align: center;
+}
+
+/* --- ÁREA DE CÓDIGO --- */
+.bloque-codigo pre {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    padding: 20px;
+    margin: 0;
+    max-height: 400px;
+    overflow: auto;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 2px 10px rgba(0, 0, 0, 0.3);
+    box-sizing: border-box;
+}
+
+.bloque-codigo pre code {
+    color: #903bdb;
+    font-size: 15px;
+    font-family: 'Courier New', monospace;
+    line-height: 1.6;
+}
+
+/* Sintaxis de MATLAB personalizada */
+.bloque-codigo pre code .token.keyword {
+    color: #430280;
+    font-weight: bold;
+}
+
+.bloque-codigo pre code .token.function {
+    color: #1F2A44;
+}
+
+.bloque-codigo pre code .token.string {
+    color: #3D5A80;
+}
+
+.bloque-codigo pre code .token.number {
+    color: #386bd8;
+}
+
+.bloque-codigo pre code .token.comment {
+    color: #8e2ba2;
+    font-style: italic;
+}
+
+/* --- BOTÓN DE COPIAR --- */
+.bloque-codigo button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: white;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    font-size: 15px;
+    font-family: 'Chewy', cursive;
+    font-weight: 400;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    align-self: center;
+}
+
+.bloque-codigo button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+}
+
+.bloque-codigo button:active {
+    transform: scale(0.98);
+}
+
+/* --- SCROLLBAR PERSONALIZADA --- */
+.bloque-codigo pre::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+.bloque-codigo pre::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.bloque-codigo pre::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+}
+
+.bloque-codigo pre::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+
+/* --- RESPONSIVE --- */
+@media (max-width: 1200px) {
+    .contenedor-codigos {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+    
+    h2[align="center"] {
+        font-size: 40px;
+        padding: 20px 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .bloque-codigo {
+        padding: 20px;
+    }
+    
+    .bloque-codigo h3 {
+        font-size: 20px;
+    }
+    
+    .bloque-codigo pre code {
+        font-size: 12px;
+    }
+    
+    h2[align="center"] {
+        font-size: 32px;
+        padding: 15px 25px;
+    }
+    
+    body > p {
+        font-size: 16px;
+    }
+    
+    .titulo {
+        font-size: 24px;
+    }
+}
+
+/* --- OCULTAR SECCIONES ANTIGUAS --- */
+.seccion-central {
+    display: none;
+}

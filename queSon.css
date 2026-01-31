@@ -10,7 +10,7 @@
 }
 
 body {
-    font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', cursive;
+    font-family: 'Poppins', sans-serif;
     background: #E8E4F0;
     min-height: 100vh;
     position: relative;
@@ -200,9 +200,9 @@ body {
     border: none;
     padding: 10px 20px;
     border-radius: 25px;
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'Chewy', cursive;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: normal;
     cursor: pointer;
     transition: all 0.3s ease;
 }
@@ -221,7 +221,7 @@ body {
     font-size: 32px;
     font-weight: bold;
     color: white;
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'Atma', cursive;
     letter-spacing: 2px;
     pointer-events: none;
     text-transform: uppercase;
@@ -262,7 +262,7 @@ body {
     color: white;
     text-decoration: none;
     font-size: 16px;
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'Poppins', sans-serif;
     transition: color 0.3s, padding-left 0.3s;
     display: block;
     padding: 8px 0;
@@ -282,7 +282,7 @@ body {
     padding: 0 40px;
 }
 
-/* --- CAJA DE DEFINICIÓN PRINCIPAL CON TÍTULO (Imagen 1 - caja blanca con transparencia y borde morado) --- */
+/* --- CAJA DE DEFINICIÓN PRINCIPAL CON TÍTULO --- */
 .definition-main {
     background: rgba(255, 255, 255, 0.85);
     border: 5px solid #9B7EBD;
@@ -298,7 +298,7 @@ body {
 .definition-main h1 {
     font-size: 52px;
     color: #2C3E5F;
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'Atma', cursive;
     font-weight: bold;
     text-align: center;
     margin: 0 0 25px 0;
@@ -325,7 +325,7 @@ body {
     color: #2C3E5F;
 }
 
-/* --- CAJA "PARES ORDENADOS" (Imagen 1 - caja azul oscuro) --- */
+/* --- CAJA "PARES ORDENADOS" --- */
 .pares-box {
     background: linear-gradient(135deg, #4A5F7F 0%, #3B4D6B 100%);
     border-radius: 35px;
@@ -341,7 +341,7 @@ body {
     font-size: 44px;
     color: #7FA5A8;
     margin-bottom: 25px;
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'Atma', cursive;
     font-weight: bold;
 }
 
@@ -370,7 +370,7 @@ body {
     font-weight: bold;
 }
 
-/* --- SECCIÓN DE DOS COLUMNAS (Imagen 2) --- */
+/* --- SECCIÓN DE DOS COLUMNAS --- */
 .two-column-layout {
     display: flex;
     gap: 30px;
@@ -381,7 +381,7 @@ body {
     z-index: 1;
 }
 
-/* Columna izquierda - "Dominio y Codominio" */
+/* Columna izquierda */
 .column-left {
     flex: 1;
     background: linear-gradient(135deg, #4A5F7F 0%, #3B4D6B 100%);
@@ -394,7 +394,7 @@ body {
     font-size: 38px;
     color: #7FA5A8;
     margin-bottom: 25px;
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'Atma', cursive;
     font-weight: bold;
     font-style: italic;
 }
@@ -434,7 +434,7 @@ body {
     font-size: 16px;
 }
 
-/* Columna derecha - "Ejemplos de relación" */
+/* Columna derecha */
 .column-right {
     flex: 1;
     background: linear-gradient(135deg, #4A5F7F 0%, #3B4D6B 100%);
@@ -447,8 +447,8 @@ body {
     font-size: 38px;
     color: #7FA5A8;
     margin-bottom: 25px;
-    font-family: 'Comic Sans MS', cursive;
-    font-weight: bold;
+    font-family: 'Chewy', cursive;
+    font-weight: normal;
     font-style: italic;
 }
 
@@ -483,7 +483,7 @@ body {
     font-size: 16px;
 }
 
-/* --- SECCIÓN "IMPORTANCIA" (Imagen 3) --- */
+/* --- SECCIÓN "IMPORTANCIA" --- */
 .importance-section {
     margin: 50px auto;
     max-width: 1400px;
@@ -504,7 +504,7 @@ body {
 .importance-title-wrapper h2 {
     font-size: 48px;
     color: #7FA5A8;
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'Atma', cursive;
     font-weight: bold;
     margin: 0;
 }
@@ -515,7 +515,6 @@ body {
     align-items: stretch;
 }
 
-/* Caja izquierda - "Las relaciones permiten" */
 .importance-left {
     flex: 1;
     background: linear-gradient(135deg, #4A5F7F 0%, #3B4D6B 100%);
@@ -528,13 +527,12 @@ body {
     font-size: 34px;
     color: #7FA5A8;
     margin-bottom: 25px;
-    font-family: 'Comic Sans MS', cursive;
-    font-weight: bold;
+    font-family: 'Chewy', cursive;
+    font-weight: normal;
     font-style: italic;
     text-align: left;
 }
 
-/* Caja derecha - "Por esta razón..." */
 .importance-right {
     flex: 1;
     background: linear-gradient(135deg, #4A5F7F 0%, #3B4D6B 100%);
@@ -547,18 +545,18 @@ body {
     font-size: 30px;
     color: #7FA5A8;
     margin-bottom: 25px;
-    font-family: 'Comic Sans MS', cursive;
-    font-weight: bold;
+    font-family: 'Chewy', cursive;
+    font-weight: normal;
     font-style: italic;
     text-align: center;
     line-height: 1.3;
 }
 
-/* --- ESTILOS PARA CONTENIDO SIN CAJAS --- */
+/* --- ESTILOS GENERALES --- */
 h2 {
     font-size: 36px;
     color: #2B3A67;
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'Atma', cursive;
     font-weight: bold;
     margin: 30px 0 20px;
     position: relative;
@@ -572,8 +570,8 @@ h2 {
 h3 {
     font-size: 28px;
     color: #2B3A67;
-    font-family: 'Comic Sans MS', cursive;
-    font-weight: bold;
+    font-family: 'Chewy', cursive;
+    font-weight: normal;
     margin: 25px 0 15px;
     position: relative;
     z-index: 1;
@@ -627,11 +625,7 @@ ul[type="circle"] li {
     }
 }
 
-/* ============================================
-   CLASES REUTILIZABLES DEL UTILITARIO
-   ============================================ */
-
-/* --- UTILIDADES GENERALES --- */
+/* UTILIDADES */
 .seccion-central {
     display: flex;
     align-items: center;
@@ -660,79 +654,6 @@ ul[type="circle"] li {
     width: 60%;
 }
 
-.columnamat {
-    width: 48%;
-}
-
-.imagen-centro {
-    width: 30%;
-    text-align: center;
-}
-
-.imagen-centro img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* --- BLOQUES DE CÓDIGO --- */
-.bloque-codigo {
-    position: relative;
-    max-width: 700px;
-}
-
-.bloque-codigo button {
-    margin-top: 8px;
-    padding: 6px 12px;
-    cursor: pointer;
-}
-
-/* Contenedor general */
-.contenedor-codigos {
-    display: flex;
-    gap: 150px;
-    justify-content: center;
-    align-items: flex-start;
-    margin: 40px 0;
-}
-
-/* Cada bloque */
-.bloque-codigo {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 420px;
-}
-
-/* Bloque de código */
-.bloque-codigo pre {
-    width: 100%;
-    background-color: #d51a1a;
-    color: #000000;
-    padding: 20px;
-    border-radius: 10px;
-    max-height: 350px;
-    overflow: auto;
-    font-size: 14px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
-}
-
-/* Botón */
-.bloque-codigo button {
-    margin-top: 12px;
-    padding: 8px 16px;
-    background-color: #2d2d2d;
-    color: #ffffff;
-    border: none;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background 0.3s;
-}
-
-.bloque-codigo button:hover {
-    background-color: #444;
-}
-
-/* --- RESPONSIVE UTILITIES --- */
 @media (max-width: 768px) {
     .seccion-central {
         flex-direction: column;
@@ -742,13 +663,7 @@ ul[type="circle"] li {
     .columna1,
     .columna2,
     .columna3,
-    .columna4,
-    .columnamat {
+    .columna4 {
         width: 100%;
-    }
-    
-    .contenedor-codigos {
-        flex-direction: column;
-        gap: 40px;
     }
 }

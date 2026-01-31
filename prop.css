@@ -9,7 +9,7 @@
 }
 
 body {
-    font-family: 'Comic Sans MS', 'Comic Neue', cursive;
+    font-family: 'Poppins', sans-serif;
     background: #E8E4F0;
     min-height: 100vh;
     color: #2C3E5F;
@@ -66,8 +66,9 @@ body {
     border: none;
     padding: 10px 20px;
     border-radius: 25px;
+    font-family: 'Chewy', cursive;
     font-size: 16px;
-    font-weight: bold;
+    font-weight: normal;
     cursor: pointer;
     transition: .3s;
 }
@@ -84,6 +85,7 @@ body {
     font-size: 32px;
     color: white;
     font-weight: bold;
+    font-family: 'Atma', cursive;
 }
 
 /* ===== MENÚ ===== */
@@ -103,6 +105,7 @@ body {
     text-decoration: none;
     display: block;
     margin: 10px 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 /* ===== CONTENIDO ===== */
@@ -114,6 +117,7 @@ h1 {
     margin: 50px auto 30px;
     font-size: 50px;
     text-align: center;
+    font-family: 'Atma', cursive;
 }
 
 p {
@@ -145,11 +149,13 @@ h2 {
     max-width: 800px;
     margin: 60px auto 20px;
     font-size: 38px;
+    font-family: 'Atma', cursive;
 }
 
 h3, h4 {
     max-width: 900px;
     margin: 20px auto 10px;
+    font-family: 'Chewy', cursive;
 }
 
 /* ===== CAJAS ===== */
@@ -186,4 +192,3 @@ h3, h4 {
     color: #0f766e;
     font-weight: bold;
 }
-

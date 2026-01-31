@@ -1,13 +1,37 @@
-<!DOCTYPE html>
-<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Relaciones</title>
-
-    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Códigos MATLAB - Relaciones</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;500;600;700&family=Chewy&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="matlab.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css">
 </head>
 
 <body>
+
+<div class="circle-deco circle-1"></div>
+<div class="circle-deco circle-2"></div>
+<div class="circle-deco circle-3"></div>
+<div class="circle-deco circle-4"></div>
+<div class="circle-deco circle-5"></div>
+<div class="circle-deco circle-6"></div>
+<div class="circle-deco circle-7"></div>
+<div class="circle-deco circle-8"></div>
+<div class="circle-deco circle-9"></div>
+<div class="circle-deco circle-10"></div>
+<div class="circle-deco circle-11"></div>
+<div class="circle-deco circle-12"></div>
+<div class="circle-deco circle-13"></div>
+<div class="circle-deco circle-14"></div>
+<div class="circle-deco circle-15"></div>
+<div class="circle-deco circle-16"></div>
+<div class="circle-deco circle-17"></div>
+<div class="circle-deco circle-18"></div>
 
 <!-- Barra superior -->
 <div class="barra-superior">
@@ -43,61 +67,53 @@
     <li><a href="matlab.html">Matlab</a></li>
 </ul>
 
-<h1 align="center"><b>Relacion de equivalencia</b></h1>
-<p>Sea A un conjunto y R una relacion definida sobre A.<br>
-Se dice que R es una<b> relacion de equivalencia</b> si cumple las 
-siguientes tres propiedades: </p>
-<p><ul type="circle">
-    <il>Reflexiva:</il>
-    <p>(𝑎, 𝑎) ∈ 𝑅 para todo 𝑎 ∈ 𝐴</p>
-    <il>Simétrica:</il> 
-    <p>Si (𝑎, 𝑏) ∈ 𝑅 y entonces (𝑏,𝑎) ∈ 𝑅</p>
-    <il>Transitiva:</il>
-    <p>Si (𝑎, 𝑏) ∈ 𝑅 y (𝑏,𝑐) ∈ 𝑅, entonces (𝑎,𝑐) ∈ 𝑅 </p>
-</ul></p>
-<p>Estas relaciones se utilizan para <b> agrupar elementos que son considerados equivalentes 
-bajo algún criterio.</b></p>
-<h3>Ejemplo:</h3>
-<p>Sea:</p>
-<p align="center"> A = ℤ</p>
-<p>Definimos la relacion:</p>
-<p align="center">a ≡ b</p>
-<p>Dos numeros son equivalentes si dejan el mismo residuo al dividirse para 3.</p>
-<p>Ejemplos:</p>
-<p align="center">1 ≡ 4 ≡ 7 ≡ 10</p>
-<p>Esta relacion cumple con las tres propiedades, por lo tanto es una <b>relacion de equivalencia.</b></p>
+<div class="main-content">
+    
+    <header class="full-width-title">
+        <h1>Relación de Equivalencia</h1>
+    </header>
 
-<h2>Particion de un conjunto</h2>
-<p>Una<b> particion </b>de un conjunto A es una coleccion de subconjuntos no vacios que cumple:</p>
-<ol type="1">
-    <li>Todos los subconjuntos son <b>disjuntos</b> entre sí</li>
-    <li>La <b>unión de todos ellos es el conjunto A </b></li>
-</ol>
+    <section class="card-panel equivalencia-card">
+        <h2>Concepto</h2>
+        <p>Sea A un conjunto y R una relación definida sobre A. R es de <b>equivalencia</b> si cumple:</p>
+        
+        <ul class="propiedades-list">
+            <li><b>Reflexiva:</b> (𝑎, 𝑎) ∈ 𝑅</li>
+            <li><b>Simétrica:</b> Si (𝑎, 𝑏) ∈ 𝑅 ⟹ (𝑏, 𝑎) ∈ 𝑅</li>
+            <li><b>Transitiva:</b> Si (𝑎, 𝑏) y (𝑏, 𝑐) ∈ 𝑅 ⟹ (𝑎, 𝑐) ∈ 𝑅</li>
+        </ul>
 
-<p>Formalmente:</p>
-<p align="center">A = 𝐴<sub>1</sub> ∪ 𝐴<sub>2</sub> ∪ ⋯ ∪ 𝐴<sub>n</sub></p>
-<p>y</p>
-<p align="center">𝐴<sub>i</sub> ∩ 𝐴<sub>j</sub> = ∅ si 𝑖 ≠ 𝑗 </p>
-<h3>Ejemplos</h3>
-<p>Sea:</p>
-<p align="center">A = {1,2,3,4,5,6} </p>
-<p>Una particion es:</p>
-<p align="center">{{1,4}, {2,5}, {3,6}}</p>
-<ul type="circle">
-    <li>No se repiten elementos</li>
-    <li>Todos los elementos estan en algun subconjunto</li>
-</ul>
-<p>Por lo tanto, es una particion valida</p>
-<h2>Relacion entre equivalencia y particion</h2>
-<p><b>Toda relacion de equivalencia genera una particion</b></p>
-<p>Las<b> clases de equivalencia </b>forman una particion del conjunto.</p>
-<p>Ejemplo:</p>
-<p align="center">A = ℤ</p>
-<p>Clases mod 3</p>
-<p align="center">{[0], [1], [2]}</p>
-<p>Estas clases:</p>
-<ul type="circle">
-    <li>No se intersecan</li>
-    <li>Cubren todo el conjunto</li>
-</ul>
-<p>por ende, forman una particion.</p>
+        <h3>Ejemplo:</h3>
+        <p>A = ℤ (Enteros). Relación: a ≡ b (mod 3)</p>
+        <div class="formula">1 ≡ 4 ≡ 7 ≡ 10</div>
+    </section>
+
+    <section class="card-panel particion-card">
+        <h2>Partición de un Conjunto</h2>
+        <p>Colección de subconjuntos no vacíos que cumplen:</p>
+        <ol>
+            <li>Son <b>disjuntos</b> (no se repiten elementos).</li>
+            <li>Su unión es el <b>conjunto A</b> completo.</li>
+        </ol>
+        
+        
+
+        <div class="formula">A = 𝐴₁ ∪ 𝐴₂ ∪ ⋯ ∪ 𝐴ₙ</div>
+        
+        <h3>Ejemplo Práctico:</h3>
+        <p>A = {1,2,3,4,5,6}</p>
+        <div class="formula">{{1,4}, {2,5}, {3,6}}</div>
+    </section>
+
+    <section class="relacion-box">
+        <div style="flex: 2;">
+            <h2>Relación entre Equivalencia y Partición</h2>
+            <p><b>Toda relación de equivalencia genera una partición.</b> Las clases de equivalencia dividen al conjunto sin dejar elementos fuera ni repetirlos.</p>
+        </div>
+        <div style="flex: 1;" class="formula">
+            {[0], [1], [2]} <br>
+            Clases mod 3
+        </div>
+    </section>
+
+</div>

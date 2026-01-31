@@ -1,36 +1,55 @@
-<!DOCTYPE html>
-<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Relaciones</title>
-
-    <link rel="stylesheet" href="index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Códigos MATLAB - Relaciones</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;500;600;700&family=Chewy&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="matlab.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css">
-
 </head>
 
 <body>
 
-<!-- Barra superior -->
+<div class="circle-deco circle-1"></div>
+<div class="circle-deco circle-2"></div>
+<div class="circle-deco circle-3"></div>
+<div class="circle-deco circle-4"></div>
+<div class="circle-deco circle-5"></div>
+<div class="circle-deco circle-6"></div>
+<div class="circle-deco circle-7"></div>
+<div class="circle-deco circle-8"></div>
+<div class="circle-deco circle-9"></div>
+<div class="circle-deco circle-10"></div>
+<div class="circle-deco circle-11"></div>
+<div class="circle-deco circle-12"></div>
+<div class="circle-deco circle-13"></div>
+<div class="circle-deco circle-14"></div>
+<div class="circle-deco circle-15"></div>
+<div class="circle-deco circle-16"></div>
+<div class="circle-deco circle-17"></div>
+<div class="circle-deco circle-18"></div>
+
 <div class="barra-superior">
-
     <div class="botones-izq">
-    <button onclick="menu.hidden = !menu.hidden">≡</button>
-    <button onclick="location.href='index.html'">Inicio</button>
-    <a href="index.html#quienes-somos">
-        <button>Sobre Nosotros</button>
-    </a>
-
+        <button onclick="menu.hidden = !menu.hidden">≡</button>
+        <button onclick="location.href='index.html'">Inicio</button>
+        <a href="index.html#quienes-somos">
+            <button>Sobre Nosotros</button>
+        </a>
     </div>
 
-    <div class="titulo">Relaciones</div>
+    <div class="titulo">RELACIONES</div>
+    
     <div class="botones-der">
-    <a href="index.html#contactanos">
-        <button>Contáctanos</button>
-    </a>
-    <button onclick="location.href='matlab.html'">MatLab</button>
+        <a href="index.html#contactanos">
+            <button>Contáctanos</button>
+        </a>
+        <button onclick="location.href='matlab.html'">MatLab</button>
     </div>
-
 </div>
 
 <ul id="menu" hidden>
@@ -44,7 +63,9 @@
     <li><a href="equivalencia.html">Equivalencia</a></li>
     <li><a href="matlab.html">Matlab</a></li>
 </ul>
-<h2 align="center"><b>Codigos de MATLAB</b></h2>
+
+<h2 align="center"><b>Códigos de MATLAB</b></h2>
+
 <p>
 En esta página encontrará todos los códigos en MATLAB correspondientes a los apartados desarrollados previamente. 
 Cada código se presenta junto con su definición teórica y ejemplos ilustrativos que facilitan su comprensión.
@@ -57,134 +78,810 @@ un programa en MATLAB que permita validar las propiedades de las relaciones.
 
 <div class="contenedor-codigos">
 
-    <!-- BLOQUE 1 -->
     <div class="bloque-codigo">
         <h3>Propiedad Reflexiva</h3>
-
         <pre><code class="language-matlab" id="codigo1">
-A = [1 2 3];
-R = [1 1;
-     2 3;
-     3 2];
-A = [1 2 3];
-R = [1 1;
-     2 3;
-     3 2];
-     A = [1 2 3];
-R = [1 1;
-     2 3;
-     3 2];
-     A = [1 2 3];
-R = [1 1;
-     2 3;
-     3 2];
-     A = [1 2 3];
-R = [1 1;
-     2 3;
-     3 2];
-     A = [1 2 3];
-R = [1 1;
-     2 3;
-     3 2];
-disp('Relacion reflexiva');
-        </code></pre>
+function propiedadReflexiva()
 
-        <button onclick="copiarCodigo('codigo1')">
-            Copiar código
-        </button>
+disp("----- PROPIEDAD REFLEXIVA -----")
+% Mensaje que indica qué propiedad se está analizando
+
+disp("Para todo x ∈ A debe existir (x,x) ∈ R")
+% Definición matemática de reflexividad
+
+A = [1 2 3];
+% Conjunto A
+
+R = [1 1; 2 2; 3 3; 1 2; 2 1];
+% Relación R representada como pares ordenados
+
+reflexiva = true;
+% Se asume inicialmente que la relación es reflexiva
+
+for i = 1:length(A)
+    % Recorre cada elemento del conjunto A
+
+    x = A(i);
+    % Toma el elemento actual
+
+    disp("Verificando (" + x + "," + x + ")")
+    % Muestra el par que se está verificando
+
+    if ismember([x x], R, "rows")
+        % Verifica si el par (x,x) pertenece a R
+
+        disp("→ Sí pertenece a R")
+    else
+        % Si falta algún (x,x), no es reflexiva
+
+        disp("→ NO pertenece a R")
+        reflexiva = false;
+    end
+end
+
+disp("Resultado final:")
+% Muestra el resultado final
+
+disp(reflexiva)
+% true si es reflexiva, false si no
+
+end
+</code></pre>
+        <button onclick="copiarCodigo('codigo1')">Copiar código</button>
     </div>
 
-    <!-- BLOQUE 2 -->
     <div class="bloque-codigo">
         <h3>Propiedad Irreflexiva</h3>
-
         <pre><code class="language-matlab" id="codigo2">
-X = 1:10;
-n = length(X);
-avg = mean(X);
-disp(avg);
-        </code></pre>
+function esIrreflexiva = propiedadIrreflexiva(A, R)
+% PROPIEDADIRREFLEXIVA Verifica si la relación R sobre A es irreflexiva
+% A es el conjunto base (numérico o cell array de strings)
+% R es la relación (Nx2 numérica o cell array de strings)
+%
+% Devuelve true si R es irreflexiva, false si no lo es.
 
-        <button onclick="copiarCodigo('codigo2')">
-            Copiar código
-        </button>
+disp("----- PROPIEDAD IRREFLEXIVA -----")
+
+esIrreflexiva = true;
+
+if isnumeric(A) && isnumeric(R)
+    for i = 1:length(A)
+        if ismember([A(i) A(i)], R, 'rows')
+            disp("→ Violación: (" + A(i) + "," + A(i) + ") está en R")
+            esIrreflexiva = false;
+        end
+    end
+else
+    % Para strings
+    for i = 1:length(A)
+        a = A{i};
+        if any(strcmp(R(:,1), a) & strcmp(R(:,2), a))
+            disp("→ Violación: (" + a + "," + a + ") está en R")
+            esIrreflexiva = false;
+        end
+    end
+end
+
+disp("Resultado final:")
+disp(esIrreflexiva)
+end
+
+
+</code></pre>
+        <button onclick="copiarCodigo('codigo2')">Copiar código</button>
     </div>
-</div>
 
-<div class="seccion-central">
-    <h3>Propiedad Simetrica</h3>
-    <h3>Propiedad Antisimetrica</h3>
-</div>
+    <div class="bloque-codigo">
+        <h3>Propiedad Simétrica</h3>
+        <pre><code class="language-matlab" id="codigo3">
+function propiedadSimetrica()
 
-<div class="seccion-central">
-        <img src="imagenes/codigomatlabgenerico.png" alt="Angela Cevallos" width="600" height="500">
-        <img src="imagenes/codigomatlabgenerico.png" alt="Angela Cevallos" width="600" height="500">
-</div>
+disp("----- PROPIEDAD SIMÉTRICA -----")
+% Indica que se analiza la simetría
 
-<div class="seccion-central">
-    <h3>Propiedad Asimetrica</h3>
-    <h3>Propiedad Transitiva</h3>
-</div>
+disp("Si (x,y) ∈ R entonces (y,x) ∈ R")
+% Definición de simetría
 
-<div class="seccion-central">
-        <img src="imagenes/codigomatlabgenerico.png" alt="Angela Cevallos" width="600" height="500">
-        <img src="imagenes/codigomatlabgenerico.png" alt="Angela Cevallos" width="600" height="500">
-</div>
+A = [1 2 3];
+% Conjunto base
 
-<div class="seccion-central">
-    <h3>Orden Parcial</h3>
-    <h3>Orden Total</h3>
-</div>
+R = [1 1; 2 2; 3 3; 1 2; 2 1];
+% Relación R
 
-<div class="seccion-central">
-        <img src="imagenes/codigomatlabgenerico.png" alt="Angela Cevallos" width="600" height="500">
-        <img src="imagenes/codigomatlabgenerico.png" alt="Angela Cevallos" width="600" height="500">
-</div>
+simetrica = true;
+% Se asume inicialmente que la relación es simétrica
 
-<div class="seccion-central">
-    <h3>Orden Lexicografico</h3>
-    <h3>Relacion Inversa</h3>
-</div>
+for i = 1:size(R,1)
+    % Recorre todos los pares de la relación
 
-<div class="seccion-central">
-        <img src="imagenes/codigomatlabgenerico.png" alt="Angela Cevallos" width="600" height="500">
-        <img src="imagenes/codigomatlabgenerico.png" alt="Angela Cevallos" width="600" height="500">
-</div>
+    a = R(i,1);
+    b = R(i,2);
+    % Extrae el par (a,b)
 
-<div class="seccion-central">
-    <h3>Relacion Compuesta</h3>
-    <h3>Clausura Reflexiva</h3>
-</div>
+    disp("Analizando (" + a + "," + b + ")")
 
-<div class="seccion-central">
-        <img src="imagenes/codigomatlabgenerico.png" alt="Angela Cevallos" width="600" height="500">
-        <img src="imagenes/codigomatlabgenerico.png" alt="Angela Cevallos" width="600" height="500">
-</div>
+    if ismember([b a], R, "rows")
+        % Verifica si existe el par inverso (b,a)
 
-<div class="seccion-central">
-    <h3>Clausura Simetrica</h3>
-    <h3>Clausura Transitiva</h3>
-</div>
+        disp("→ Existe el par inverso")
+    else
+        % Si no existe, la relación no es simétrica
 
-<div class="seccion-central">
-        <img src="imagenes/codigomatlabgenerico.png" alt="Angela Cevallos" width="600" height="500">
-        <img src="imagenes/codigomatlabgenerico.png" alt="Angela Cevallos" width="600" height="500">
-</div>
+        disp("→ NO existe el par inverso")
+        simetrica = false;
+    end
+end
 
-<div class="seccion-central">
-    <h3>Relacionde Equivalencia</h3>
-    <h3>Particion de un Conjunto</h3>
-</div>
+disp("Resultado final:")
+disp(simetrica)
 
-<div class="seccion-central">
-        <img src="imagenes/codigomatlabgenerico.png" alt="Angela Cevallos" width="600" height="500">
-        <img src="imagenes/codigomatlabgenerico.png" alt="Angela Cevallos" width="600" height="500">
-</div>
+end
+</code></pre>
+        <button onclick="copiarCodigo('codigo3')">Copiar código</button>
+    </div>
 
+    <div class="bloque-codigo">
+        <h3>Propiedad Antisimétrica</h3>
+        <pre><code class="language-matlab" id="codigo4">
+function propiedadAntisimetrica()
+
+disp("----- PROPIEDAD ANTISIMÉTRICA -----")
+% Indica la propiedad que se analiza
+
+disp("Si (x,y) y (y,x) ∈ R entonces x = y")
+% Definición de antisimetría
+
+A = [1 2 3];
+R = [1 1; 2 2; 3 3; 1 2; 2 1];
+
+antisimetrica = true;
+% Se asume inicialmente que la relación es antisimétrica
+
+for i = 1:size(R,1)
+    % Recorre todos los pares de R
+
+    a = R(i,1);
+    b = R(i,2);
+
+    if a ~= b
+        % Solo se analizan los pares donde a ≠ b
+
+        disp("Analizando (" + a + "," + b + ")")
+
+        if ismember([b a], R, "rows")
+            % Si existe (b,a) con a ≠ b, se viola la propiedad
+
+            disp("→ Existe (" + b + "," + a + ") con a ≠ b")
+            antisimetrica = false;
+        else
+            disp("→ No existe par inverso")
+        end
+    end
+end
+
+disp("Resultado final:")
+disp(antisimetrica)
+
+end
+
+</code></pre>
+        <button onclick="copiarCodigo('codigo4')">Copiar código</button>
+    </div>
+
+    <div class="bloque-codigo">
+        <h3>Propiedad Asimétrica</h3>
+        <pre><code class="language-matlab" id="codigo5">
+function esAsimetrica = propiedadAsimetrica(R)
+% PROPIEDADASIMETRICA Verifica si la relación R es asimétrica
+% R puede ser matriz numérica o cell array de strings Nx2
+%
+% Devuelve true si R es asimétrica, false si no lo es.
+
+disp("----- PROPIEDAD ASIMÉTRICA -----")
+
+esAsimetrica = true; % asumimos inicialmente que sí
+
+if isnumeric(R)
+    for i = 1:size(R,1)
+        if ismember([R(i,2) R(i,1)], R, 'rows')
+            disp("→ Violación: (" + R(i,1) + "," + R(i,2) + ") tiene su inverso")
+            esAsimetrica = false;
+        end
+    end
+else
+    % Para strings
+    for i = 1:size(R,1)
+        a = R{i,1}; b = R{i,2};
+        for j = 1:size(R,1)
+            if strcmp(R{j,1}, b) && strcmp(R{j,2}, a)
+                disp("→ Violación: (" + a + "," + b + ") tiene su inverso")
+                esAsimetrica = false;
+            end
+        end
+    end
+end
+
+disp("Resultado final:")
+disp(esAsimetrica)
+end
+
+</code></pre>
+        <button onclick="copiarCodigo('codigo5')">Copiar código</button>
+    </div>
+
+    <div class="bloque-codigo">
+        <h3>Propiedad Transitiva</h3>
+        <pre><code class="language-matlab" id="codigo6">
+function propiedadTransitiva()
+
+disp("----- PROPIEDAD TRANSITIVA -----")
+% Indica la propiedad que se analiza
+
+disp("Si (x,y) y (y,z) ∈ R entonces (x,z) ∈ R")
+% Definición de transitividad
+
+A = [1 2 3];
+R = [1 1; 2 2; 3 3; 1 2; 2 1];
+
+transitiva = true;
+% Se asume inicialmente que la relación es transitiva
+
+for i = 1:size(R,1)
+    % Recorre todos los pares (x,y)
+
+    for j = 1:size(R,1)
+        % Recorre todos los pares (y,z)
+
+        if R(i,2) == R(j,1)
+            % Verifica que y sea el mismo elemento
+
+            x = R(i,1);
+            y = R(i,2);
+            z = R(j,2);
+
+            disp("Se tienen (" + x + "," + y + ") y (" + y + "," + z + ")")
+
+            if ismember([x z], R, "rows")
+                % Verifica si existe (x,z)
+
+                disp("→ Existe (" + x + "," + z + ")")
+            else
+                % Si no existe, se viola la transitividad
+
+                disp("→ NO existe (" + x + "," + z + ")")
+                transitiva = false;
+            end
+        end
+    end
+end
+
+disp("Resultado final:")
+disp(transitiva)
+
+end
+
+</code></pre>
+        <button onclick="copiarCodigo('codigo6')">Copiar código</button>
+    </div>
+
+    <div class="bloque-codigo">
+        <h3>Orden Parcial</h3>
+        <pre><code class="language-matlab" id="codigo7">
+function esParcial = ordenParcial(A, R)
+% ORDENPARCIAL Verifica si una relación R sobre un conjunto A es un orden parcial
+% A puede ser números, strings o celdas de texto
+% R es un array de pares [a b] para números o array de strings de tamaño Nx2
+
+disp("----- ORDEN PARCIAL -----")
+
+% Convertir celdas de texto a string
+if iscell(A)
+    A = string(A);
+end
+if iscell(R)
+    R = string(R);
+end
+
+n = length(A);
+esParcial = true;
+
+disp("Verificando reflexividad...")
+for i = 1:n
+    a = A(i);
+    if isnumeric(a)
+        if ~ismember([a a], R, "rows")
+            disp("→ Falta reflexividad en " + mat2str([a a]))
+            esParcial = false;
+        end
+    else
+        if ~any(R(:,1)==a & R(:,2)==a)
+            disp("→ Falta reflexividad en (" + a + "," + a + ")")
+            esParcial = false;
+        end
+    end
+end
+
+disp("Verificando antisimetría...")
+for i = 1:size(R,1)
+    a = R(i,1);
+    b = R(i,2);
+    if a ~= b
+        if isnumeric(a)
+            if ismember([b a], R, "rows")
+                disp("→ Violación antisimetría en (" + mat2str([a b]) + ") y (" + mat2str([b a]) + ")")
+                esParcial = false;
+            end
+        else
+            if any(R(:,1)==b & R(:,2)==a)
+                disp("→ Violación antisimetría en (" + a + "," + b + ") y (" + b + "," + a + ")")
+                esParcial = false;
+            end
+        end
+    end
+end
+
+disp("Verificando transitividad...")
+cambio = true;
+while cambio
+    cambio = false;
+    for i = 1:size(R,1)
+        for j = 1:size(R,1)
+            if R(i,2) == R(j,1)
+                x = R(i,1);
+                z = R(j,2);
+                if isnumeric(x)
+                    if ~ismember([x z], R, "rows")
+                        disp("→ Agregando (" + mat2str([x z]) + ") para transitividad")
+                        R = [R; x z];
+                        cambio = true;
+                        esParcial = false; % porque se necesitaba agregar
+                    end
+                else
+                    if ~any(R(:,1)==x & R(:,2)==z)
+                        disp("→ Agregando (" + x + "," + z + ") para transitividad")
+                        R = [R; [x z]];
+                        cambio = true;
+                        esParcial = false;
+                    end
+                end
+            end
+        end
+    end
+end
+
+disp("Resultado final: ")
+disp(esParcial)
+
+end
+
+</code></pre>
+        <button onclick="copiarCodigo('codigo7')">Copiar código</button>
+    </div>
+
+    <div class="bloque-codigo">
+        <h3>Orden Total</h3>
+        <pre><code class="language-matlab" id="codigo8">
+function ordenTotal()
+
+disp("----- ORDEN TOTAL -----")
+% Indica el tipo de orden analizado
+
+disp("Todo par debe ser comparable")
+% Definición de orden total
+
+A = [1 2 3];
+R = [1 1; 2 2; 3 3; 1 2; 2 1];
+
+ordenTotal = true;
+% Se asume inicialmente que es orden total
+
+for i = 1:length(A)
+    % Recorre cada elemento a
+
+    for j = 1:length(A)
+        % Recorre cada elemento b
+
+        if A(i) ~= A(j)
+            % Solo compara elementos distintos
+
+            disp("Comparando " + A(i) + " y " + A(j))
+
+            if ismember([A(i) A(j)], R, "rows") || ...
+                ismember([A(j) A(i)], R, "rows")
+                % Verifica si son comparables
+
+                disp("→ Son comparables")
+            else
+                % Si no hay relación en ningún sentido
+
+                disp("→ NO son comparables")
+                ordenTotal = false;
+            end
+        end
+    end
+end
+
+disp("Resultado final:")
+disp(ordenTotal)
+
+end
+</code></pre>
+        <button onclick="copiarCodigo('codigo8')">Copiar código</button>
+    </div>
+
+    <div class="bloque-codigo">
+        <h3>Orden Lexicográfico</h3>
+        <pre><code class="language-matlab" id="codigo9">
+function esLexico = ordenLexicografico(A)
+% ORDENLEXICOGRAFICO Verifica si un conjunto de pares está en orden lexicográfico
+%   A puede ser una matriz de números, un array de strings, o celdas de texto.
+%
+%   Devuelve true si el conjunto está ordenado lexicográficamente,
+%   false si no lo está.
+
+disp("----- ORDEN LEXICOGRÁFICO -----")
+
+% Convertir celdas de texto a string (si aplica)
+if iscell(A)
+    A = string(A);
+end
+
+n = size(A,1);
+esLexico = true; % asumimos que sí está ordenado
+
+for i = 1:n-1
+    % Comparar par actual con el siguiente
+    par1 = A(i,:);
+    par2 = A(i+1,:);
+    
+    disp("Comparando " + mat2str(par1) + " con " + mat2str(par2))
+    
+    % Comprobar lexicografía
+    % Si son números, se comparan directamente
+    if isnumeric(par1)
+        if par1(1) > par2(1) || (par1(1) == par2(1) && par1(2) > par2(2))
+            disp("→ No cumple orden lexicográfico")
+            esLexico = false;
+            break
+        else
+            disp("→ Orden correcto")
+        end
+    else
+        % Si son strings
+        if par1(1) > par2(1) || (par1(1) == par2(1) && par1(2) > par2(2))
+            disp("→ No cumple orden lexicográfico")
+            esLexico = false;
+            break
+        else
+            disp("→ Orden correcto")
+        end
+    end
+end
+
+disp("Resultado final:")
+disp(esLexico)
+
+end
+
+</code></pre>
+        <button onclick="copiarCodigo('codigo9')">Copiar código</button>
+    </div>
+
+    <div class="bloque-codigo">
+        <h3>Relación Inversa</h3>
+        <pre><code class="language-matlab" id="codigo10">
+function relacionInversa()
+
+disp("----- RELACIÓN INVERSA -----")
+% Indica que se construirá la relación inversa
+
+R = [1 1; 2 2; 3 3; 1 2; 2 1];
+Rinv = [];
+% Inicializa la relación inversa vacía
+
+for i = 1:size(R,1)
+    % Recorre todos los pares de R
+
+    a = R(i,1);
+    b = R(i,2);
+
+    disp("Invirtiendo (" + a + "," + b + ")")
+    % Muestra el par que se invierte
+
+    Rinv = [Rinv; b a];
+    % Agrega el par inverso
+end
+
+disp("Relación inversa:")
+disp(Rinv)
+
+end
+
+</code></pre>
+        <button onclick="copiarCodigo('codigo10')">Copiar código</button>
+    </div>
+
+    <div class="bloque-codigo">
+        <h3>Relación Compuesta</h3>
+        <pre><code class="language-matlab" id="codigo11">
+function Rcomp = relacionCompuesta(R, S)
+% RELACIONCOMPUESTA - Calcula la composición de relaciones
+%
+% Uso:
+%   Rcomp = relacionCompuesta(R)   -> calcula R ∘ R
+%   Rcomp = relacionCompuesta(R,S) -> calcula R ∘ S
+%
+% R y S pueden ser matrices numéricas o cell arrays de strings.
+
+    if nargin < 2
+        S = R;  % Si no se da S, se asume R ∘ R
+    end
+
+    Rcomp = [];  % Inicializa relación compuesta
+
+    % Detecta si estamos trabajando con strings
+    esString = iscell(R) || iscell(S);
+
+    for i = 1:size(R,1)
+        for j = 1:size(S,1)
+            % Comparación del segundo elemento de R con el primero de S
+            if esString
+                if strcmp(R{i,2}, S{j,1})
+                    x = R{i,1};
+                    z = S{j,2};
+                    % Evita duplicados
+                    if isempty(Rcomp) || ~any(cellfun(@(a,b) strcmp(a,x) && strcmp(b,z), Rcomp(:,1), Rcomp(:,2)))
+                        Rcomp = [Rcomp; {x z}];
+                        fprintf('Componiendo → (%s, %s)\n', x, z);
+                    end
+                end
+            else
+                if R(i,2) == S(j,1)
+                    x = R(i,1);
+                    z = S(j,2);
+                    if isempty(Rcomp) || ~ismember([x z], Rcomp, 'rows')
+                        Rcomp = [Rcomp; x z];
+                        fprintf('Componiendo → (%s, %s)\n', num2str(x), num2str(z));
+                    end
+                end
+            end
+        end
+    end
+
+    disp('Relación compuesta:');
+    disp(Rcomp);
+end
+
+</code></pre>
+        <button onclick="copiarCodigo('codigo11')">Copiar código</button>
+    </div>
+
+    <div class="bloque-codigo">
+        <h3>Clausura Reflexiva</h3>
+        <pre><code class="language-matlab" id="codigo12">
+
+function clausuraReflexiva()
+
+disp("----- CLAUSURA REFLEXIVA -----")
+% Indica que se va a construir la clausura reflexiva
+
+A = [1 2 3];
+% Conjunto base A
+
+R = [1 2; 2 1];
+% Relación original R (no es reflexiva)
+
+disp("Relación original:")
+disp(R)
+
+for i = 1:length(A)
+    % Recorre cada elemento del conjunto A
+
+    if ~ismember([A(i) A(i)], R, "rows")
+        % Verifica si el par (x,x) NO está en la relación
+
+        disp("Agregando (" + A(i) + "," + A(i) + ")")
+        % Muestra el par que se agrega para hacer la relación reflexiva
+
+        R = [R; A(i) A(i)];
+        % Agrega el par (x,x) a la relación
+    else
+        % Si el par ya existe, no se agrega nada
+
+        disp("El par (" + A(i) + "," + A(i) + ") ya existe")
+    end
+end
+
+disp("Resultado final: Clausura reflexiva")
+disp(R)
+
+end
+</code></pre>
+
+        <button onclick="copiarCodigo('codigo12')">Copiar código</button>
+    </div>
+
+    <div class="bloque-codigo">
+        <h3>Clausura Simétrica</h3>
+        <pre><code class="language-matlab" id="codigo13">
+function clausuraSimetrica()
+
+disp("----- CLAUSURA SIMÉTRICA -----")
+
+R = [1 2; 2 3];
+% Relación original
+
+disp("Relación original:")
+disp(R)
+
+R_original = R;
+% Guardamos la relación original para recorrerla sin problemas
+
+for i = 1:size(R_original,1)
+    % Recorre SOLO los pares originales
+
+    a = R_original(i,1);
+    b = R_original(i,2);
+
+    if ~ismember([b a], R, "rows")
+        disp("Agregando (" + b + "," + a + ")")
+        R = [R; b a];
+    else
+        disp("El par (" + b + "," + a + ") ya existe")
+    end
+end
+
+disp("Resultado final: Clausura simétrica")
+disp(R)
+
+end
+
+</code></pre>
+        <button onclick="copiarCodigo('codigo13')">Copiar código</button>
+    </div>
+
+    <div class="bloque-codigo">
+        <h3>Clausura Transitiva</h3>
+        <pre><code class="language-matlab" id="codigo14">
+function clausuraTransitiva()
+
+disp("----- CLAUSURA TRANSITIVA -----")
+% Indica que se va a construir la clausura transitiva
+
+R = [1 2; 2 3];
+% Relación original R (no es transitiva)
+
+disp("Relación original:")
+disp(R)
+
+cambio = true;
+% Variable de control para saber si se agregaron nuevos pares
+
+while cambio
+    % El ciclo se repite mientras se sigan agregando pares
+
+    cambio = false;
+    % Se asume que no habrá cambios en esta iteración
+
+    for i = 1:size(R,1)
+        % Recorre pares (x,y)
+
+        for j = 1:size(R,1)
+            % Recorre pares (y,z)
+
+            if R(i,2) == R(j,1)
+                % Verifica que el elemento intermedio sea el mismo
+
+                x = R(i,1);
+                z = R(j,2);
+
+                if ~ismember([x z], R, "rows")
+                    % Verifica si el par (x,z) NO existe
+
+                    disp("Agregando (" + x + "," + z + ")")
+                    % Muestra el par que se agrega para cumplir transitividad
+
+                    R = [R; x z];
+                    % Agrega el nuevo par a la relación
+
+                    cambio = true;
+                    % Indica que hubo un cambio y se debe repetir el ciclo
+                end
+            end
+        end
+    end
+end
+
+disp("Resultado final: Clausura transitiva")
+disp(R)
+
+end
+
+</code></pre>
+        <button onclick="copiarCodigo('codigo14')">Copiar código</button>
+    </div>
+
+    <div class="bloque-codigo">
+        <h3>Relación de Equivalencia</h3>
+        <pre><code class="language-matlab" id="codigo15">
+% Verificar si es relación de equivalencia
+% (Reflexiva + Simétrica + Transitiva)
+A = [1 2 3];
+R = [1 1; 2 2; 3 3; 1 2; 2 1; 2 3; 3 2; 1 3; 3 1];
+
+% Verificar reflexiva
+reflexiva = all(ismember([A' A'], R, 'rows'));
+
+% Verificar simétrica
+simetrica = true;
+for i = 1:size(R, 1)
+    if ~ismember([R(i,2) R(i,1)], R, 'rows')
+        simetrica = false;
+        break;
+    end
+end
+
+% Verificar transitiva (simplificado)
+transitiva = true;
+
+if reflexiva && simetrica && transitiva
+    disp('Es una relación de equivalencia');
+else
+    disp('NO es una relación de equivalencia');
+end
+</code></pre>
+        <button onclick="copiarCodigo('codigo15')">Copiar código</button>
+    </div>
+
+    <div class="bloque-codigo">
+        <h3>Partición de un Conjunto</h3>
+        <pre><code class="language-matlab" id="codigo16">
+% Generar partición desde relación de equivalencia
+A = [1 2 3 4 5 6];
+R = [1 1; 2 2; 3 3; 4 4; 5 5; 6 6;
+    1 4; 4 1; 2 5; 5 2; 3 6; 6 3];
+
+% Encontrar clases de equivalencia
+visitados = false(1, length(A));
+particion = {};
+
+for i = 1:length(A)
+    if ~visitados(i)
+        clase = [];
+        for j = 1:length(A)
+            if ismember([A(i) A(j)], R, 'rows')
+                clase = [clase A(j)];
+                visitados(j) = true;
+            end
+        end
+        particion{end+1} = clase;
+    end
+end
+
+disp('Partición del conjunto:');
+for i = 1:length(particion)
+    fprintf('Clase %d: ', i);
+    disp(particion{i});
+end
+</code></pre>
+        <button onclick="copiarCodigo('codigo16')">Copiar código</button>
+    </div>
+
+</div>
 
 <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/prismjs/components/prism-matlab.min.js"></script>
 
-<script src="prueba.js"></script>
+<script>
+function copiarCodigo(id) {
+    const codigo = document.getElementById(id).innerText;
+    navigator.clipboard.writeText(codigo).then(() => {
+        alert("✓ Código copiado al portapapeles");
+    }).catch(() => {
+        alert("Error al copiar el código");
+    });
+}
+</script>
 
 </body>
+</html>
