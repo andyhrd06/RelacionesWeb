@@ -1,8 +1,3 @@
-/* ============================================
-   CSS PARA PÁGINA DE RELACIONES - DISEÑO EXACTO
-   ============================================ */
-
-/* --- RESET Y CONFIGURACIÓN BASE --- */
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +13,6 @@ body {
     padding-bottom: 50px;
 }
 
-/* --- CÍRCULOS DECORATIVOS DE FONDO --- */
 .circle-deco {
     position: fixed;
     border-radius: 50%;
@@ -26,7 +20,6 @@ body {
     pointer-events: none;
 }
 
-/* Círculos morados */
 .circle-1 {
     width: 350px;
     height: 350px;
@@ -67,7 +60,6 @@ body {
     right: -60px;
 }
 
-/* Círculos turquesa/teal */
 .circle-6 {
     width: 200px;
     height: 200px;
@@ -108,7 +100,6 @@ body {
     left: 30%;
 }
 
-/* Círculos grises */
 .circle-11 {
     width: 150px;
     height: 150px;
@@ -173,7 +164,6 @@ body {
     left: 50%;
 }
 
-/* --- BARRA SUPERIOR --- */
 .barra-superior {
     display: flex;
     align-items: center;
@@ -227,7 +217,6 @@ body {
     text-transform: uppercase;
 }
 
-/* --- MENÚ DESPLEGABLE --- */
 #menu {
     position: absolute;
     top: 60px;
@@ -273,7 +262,6 @@ body {
     padding-left: 10px;
 }
 
-/* --- CONTENEDOR PRINCIPAL --- */
 .content-wrapper {
     position: relative;
     z-index: 1;
@@ -282,7 +270,6 @@ body {
     padding: 0 40px;
 }
 
-/* --- CAJA DE DEFINICIÓN PRINCIPAL CON TÍTULO --- */
 .definition-main {
     background: rgba(255, 255, 255, 0.85);
     border: 5px solid #9B7EBD;
@@ -325,7 +312,6 @@ body {
     color: #2C3E5F;
 }
 
-/* --- CAJA "PARES ORDENADOS" --- */
 .pares-box {
     background: linear-gradient(135deg, #4A5F7F 0%, #3B4D6B 100%);
     border-radius: 35px;
@@ -370,7 +356,6 @@ body {
     font-weight: bold;
 }
 
-/* --- SECCIÓN DE DOS COLUMNAS --- */
 .two-column-layout {
     display: flex;
     gap: 30px;
@@ -381,7 +366,6 @@ body {
     z-index: 1;
 }
 
-/* Columna izquierda */
 .column-left {
     flex: 1;
     background: linear-gradient(135deg, #4A5F7F 0%, #3B4D6B 100%);
@@ -434,7 +418,6 @@ body {
     font-size: 16px;
 }
 
-/* Columna derecha */
 .column-right {
     flex: 1;
     background: linear-gradient(135deg, #4A5F7F 0%, #3B4D6B 100%);
@@ -483,7 +466,6 @@ body {
     font-size: 16px;
 }
 
-/* --- SECCIÓN "IMPORTANCIA" --- */
 .importance-section {
     margin: 50px auto;
     max-width: 1400px;
@@ -552,7 +534,6 @@ body {
     line-height: 1.3;
 }
 
-/* --- ESTILOS GENERALES --- */
 h2 {
     font-size: 36px;
     color: #2B3A67;
@@ -600,7 +581,6 @@ ul[type="circle"] li {
     list-style-type: circle;
 }
 
-/* --- RESPONSIVE --- */
 @media (max-width: 968px) {
     .two-column-layout,
     .importance-boxes-wrapper {
@@ -625,7 +605,6 @@ ul[type="circle"] li {
     }
 }
 
-/* UTILIDADES */
 .seccion-central {
     display: flex;
     align-items: center;

@@ -1,11 +1,3 @@
-ab · CSS
-Copiar
-
-/* ============================================
-   CSS ESPECÍFICO PARA LA PÁGINA MATLAB
-   ============================================ */
-
-/* --- RESET Y CONFIGURACIÓN BASE --- */
 * {
     margin: 0;
     padding: 0;
@@ -21,7 +13,6 @@ body {
     padding-bottom: 50px;
 }
 
-/* --- CÍRCULOS DECORATIVOS DE FONDO --- */
 .circle-deco {
     position: fixed;
     border-radius: 50%;
@@ -29,7 +20,6 @@ body {
     pointer-events: none;
 }
 
-/* Círculos morados */
 .circle-1 {
     width: 350px;
     height: 350px;
@@ -70,7 +60,6 @@ body {
     right: -60px;
 }
 
-/* Círculos turquesa */
 .circle-6 {
     width: 200px;
     height: 200px;
@@ -111,7 +100,6 @@ body {
     left: 30%;
 }
 
-/* Círculos grises */
 .circle-11 {
     width: 150px;
     height: 150px;
@@ -144,7 +132,6 @@ body {
     right: 35%;
 }
 
-/* Círculos adicionales pequeños */
 .circle-15 {
     width: 80px;
     height: 80px;
@@ -177,7 +164,6 @@ body {
     left: 50%;
 }
 
-/* --- BARRA SUPERIOR --- */
 .barra-superior {
     display: flex;
     align-items: center;
@@ -230,7 +216,6 @@ body {
     text-transform: uppercase;
 }
 
-/* --- MENÚ DESPLEGABLE --- */
 #menu {
     position: absolute;
     top: 60px;
@@ -276,7 +261,6 @@ body {
     padding-left: 10px;
 }
 
-/* --- CONTENEDOR PRINCIPAL --- */
 .main-content {
     max-width: 1400px;
     margin: 0 auto;
@@ -285,7 +269,6 @@ body {
     z-index: 1;
 }
 
-/* --- TÍTULO Y DESCRIPCIÓN --- */
 h2[align="center"] {
     font-size: 52px;
     color: #2B3A67;
@@ -316,7 +299,6 @@ body > p {
     font-weight: 400;
 }
 
-/* --- CONTENEDOR DE CÓDIGOS (DOS COLUMNAS) --- */
 .contenedor-codigos {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -328,7 +310,6 @@ body > p {
     z-index: 1;
 }
 
-/* --- BLOQUE DE CÓDIGO INDIVIDUAL --- */
 .bloque-codigo {
     background: linear-gradient(135deg, #3D5A80 0%, #2B3A67 100%);
     border-radius: 25px;
@@ -346,7 +327,6 @@ body > p {
     box-shadow: 0 15px 35px rgba(0, 0, 0, 0.4);
 }
 
-/* Alternar colores para variedad visual */
 .bloque-codigo:nth-child(odd) {
     background: linear-gradient(135deg, #3D5A80 0%, #2B3A67 100%);
 }
@@ -363,7 +343,6 @@ body > p {
     background: linear-gradient(135deg, #5F7B8A 0%, #6F758C 100%);
 }
 
-/* --- TÍTULO DEL BLOQUE --- */
 .bloque-codigo h3 {
     font-size: 24px;
     color: white;
@@ -373,7 +352,6 @@ body > p {
     text-align: center;
 }
 
-/* --- ÁREA DE CÓDIGO --- */
 .bloque-codigo pre {
     width: 100%;
     background: rgba(0, 0, 0, 0.3);
@@ -394,7 +372,6 @@ body > p {
     line-height: 1.6;
 }
 
-/* Sintaxis de MATLAB personalizada */
 .bloque-codigo pre code .token.keyword {
     color: #430280;
     font-weight: bold;
@@ -417,7 +394,6 @@ body > p {
     font-style: italic;
 }
 
-/* --- BOTÓN DE COPIAR --- */
 .bloque-codigo button {
     margin-top: 15px;
     padding: 12px 25px;
@@ -443,7 +419,6 @@ body > p {
     transform: scale(0.98);
 }
 
-/* --- SCROLLBAR PERSONALIZADA --- */
 .bloque-codigo pre::-webkit-scrollbar {
     width: 8px;
     height: 8px;
@@ -463,7 +438,6 @@ body > p {
     background: rgba(255, 255, 255, 0.5);
 }
 
-/* --- RESPONSIVE --- */
 @media (max-width: 1200px) {
     .contenedor-codigos {
         grid-template-columns: 1fr;
@@ -503,7 +477,6 @@ body > p {
     }
 }
 
-/* --- OCULTAR SECCIONES ANTIGUAS --- */
 .seccion-central {
     display: none;
 }

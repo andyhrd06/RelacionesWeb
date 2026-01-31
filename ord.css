@@ -1,11 +1,3 @@
-n · CSS
-Copiar
-
-/* ============================================
-   PÁGINA: RELACIONES DE ORDEN
-   (MISMA PALETA QUE PROPIEDADES)
-   ============================================ */
-
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +12,6 @@ body {
     overflow-x: hidden;
 }
 
-/* ===== CÍRCULOS DECORATIVOS ===== */
 .circle-deco {
     position: fixed;
     border-radius: 50%;
@@ -49,7 +40,6 @@ body {
 .circle-17{ width:110px;height:110px;background:rgba(174,141,205,.22);bottom:20%;left:20%;}
 .circle-18{ width:85px;height:85px;background:rgba(111,117,140,.2);top:35%;left:50%;}
 
-/* ===== BARRA SUPERIOR ===== */
 .barra-superior {
     display: flex;
     align-items: center;
@@ -92,7 +82,6 @@ body {
     font-family: 'Atma', cursive;
 }
 
-/* ===== MENÚ ===== */
 #menu {
     position: absolute;
     top: 60px;
@@ -112,7 +101,6 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
-/* ===== TÍTULOS ===== */
 h1 {
     background: white;
     border-radius: 35px;
@@ -141,7 +129,6 @@ h3 {
     font-family: 'Chewy', cursive;
 }
 
-/* ===== TEXTO ===== */
 p {
     max-width: 900px;
     margin: 12px auto;
@@ -149,7 +136,6 @@ p {
     line-height: 1.8;
 }
 
-/* ===== LISTAS ===== */
 ul[type="circle"] {
     max-width: 800px;
     margin: 20px auto;
@@ -164,7 +150,6 @@ ul[type="circle"] li {
     font-weight: bold;
 }
 
-/* ===== BLOQUES DE EJEMPLOS / REPRESENTACIONES ===== */
 p[align="center"] {
     background: rgba(232,244,248,.95);
     border-radius: 25px;

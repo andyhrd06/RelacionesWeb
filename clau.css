@@ -1,11 +1,3 @@
-ura · CSS
-Copiar
-
-/* ============================================
-   PÁGINA: RELACIONES DE ORDEN
-   (MISMA PALETA QUE PROPIEDADES)
-   ============================================ */
-
 * {
     margin: 0;
     padding: 0;
@@ -20,7 +12,6 @@ body {
     overflow-x: hidden;
 }
 
-/* ===== CÍRCULOS DECORATIVOS ===== */
 .circle-deco {
     position: fixed;
     border-radius: 50%;
@@ -49,7 +40,6 @@ body {
 .circle-17{ width:110px;height:110px;background:rgba(174,141,205,.22);bottom:20%;left:20%;}
 .circle-18{ width:85px;height:85px;background:rgba(111,117,140,.2);top:35%;left:50%;}
 
-/* ===== BARRA SUPERIOR ===== */
 .barra-superior {
     display: flex;
     align-items: center;
@@ -92,7 +82,6 @@ body {
     font-family: 'Atma', cursive;
 }
 
-/* ===== MENÚ ===== */
 #menu {
     position: absolute;
     top: 60px;
@@ -111,7 +100,6 @@ body {
     margin: 10px 0;
     font-family: 'Poppins', sans-serif;
 }
-/* ===== CLAUSURA HEADER (BLOQUE ANCHO) ===== */
 .clausura-header {
     max-width: 1100px;
     margin: 60px auto 50px;
@@ -133,7 +121,6 @@ body {
     margin-bottom: 12px;
 }
 
-/* ===== CONTENEDOR DE TARJETAS ===== */
 .clausura-cards {
     max-width: 1200px;
     margin: 0 auto 80px;
@@ -142,7 +129,6 @@ body {
     gap: 35px;
 }
 
-/* ===== CARD INDIVIDUAL ===== */
 .clausura-card {
     background: linear-gradient(135deg,#4A5F7F,#3B4D6B);
     border-radius: 30px;
@@ -163,7 +149,6 @@ body {
     line-height: 1.7;
 }
 
-/* BLOQUES DE FÓRMULAS / EJEMPLOS */
 .clausura-card p[align="center"] {
     background: rgba(232,244,248,.95);
     color: #2C3E5F;

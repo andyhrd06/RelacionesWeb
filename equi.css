@@ -1,6 +1,3 @@
-Equivalencia · CSS
-Copiar
-
 * {
     margin: 0;
     padding: 0;
@@ -16,7 +13,6 @@ body {
     padding-bottom: 50px;
 }
 
-/* --- CÍRCULOS DECORATIVOS DE FONDO --- */
 .circle-deco {
     position: fixed;
     border-radius: 50%;
@@ -24,7 +20,6 @@ body {
     pointer-events: none;
 }
 
-/* Círculos morados */
 .circle-1 {
     width: 350px;
     height: 350px;
@@ -65,7 +60,6 @@ body {
     right: -60px;
 }
 
-/* Círculos turquesa */
 .circle-6 {
     width: 200px;
     height: 200px;
@@ -106,7 +100,6 @@ body {
     left: 30%;
 }
 
-/* Círculos grises */
 .circle-11 {
     width: 150px;
     height: 150px;
@@ -139,7 +132,6 @@ body {
     right: 35%;
 }
 
-/* Círculos adicionales pequeños */
 .circle-15 {
     width: 80px;
     height: 80px;
@@ -172,7 +164,6 @@ body {
     left: 50%;
 }
 
-/* --- BARRA SUPERIOR --- */
 .barra-superior {
     display: flex;
     align-items: center;
@@ -225,7 +216,6 @@ body {
     text-transform: uppercase;
 }
 
-/* --- MENÚ DESPLEGABLE --- */
 #menu {
     position: absolute;
     top: 60px;
@@ -271,7 +261,6 @@ body {
     padding-left: 10px;
 }
 
-/* --- CONTENEDOR PRINCIPAL --- */
 .main-content {
     max-width: 1200px;
     margin: 0 auto;
@@ -280,7 +269,6 @@ body {
     z-index: 1;
 }
 
-/* --- TÍTULO DE PÁGINA COMPLETO --- */
 .full-width-title {
     text-align: center;
     margin: 40px 0 50px;
@@ -298,7 +286,6 @@ body {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
-/* --- TARJETAS DE CONTENIDO --- */
 .card-panel {
     background: white;
     border-radius: 35px;
@@ -337,7 +324,6 @@ body {
     font-weight: bold;
 }
 
-/* --- LISTAS DE PROPIEDADES --- */
 .propiedades-list {
     list-style: none;
     padding: 0;
@@ -366,7 +352,6 @@ body {
     color: #588186;
 }
 
-/* --- LISTAS NUMERADAS --- */
 .card-panel ol {
     margin: 20px 0 20px 30px;
 }
@@ -382,7 +367,6 @@ body {
     color: #588186;
 }
 
-/* --- FÓRMULAS --- */
 .formula {
     text-align: center;
     font-size: 26px;
@@ -397,7 +381,6 @@ body {
     border: 2px solid rgba(88, 129, 134, 0.2);
 }
 
-/* Fórmulas dentro de la caja de relación */
 .relacion-box .formula {
     background: rgba(174, 141, 205, 0.25);
     color: white;
@@ -409,7 +392,6 @@ body {
     border: 2px solid rgba(174, 141, 205, 0.4);
 }
 
-/* --- TARJETAS ESPECIALES CON COLOR --- */
 .equivalencia-card {
     border-left: 8px solid #AE8DCD;
     background: linear-gradient(135deg, rgba(174, 141, 205, 0.08) 0%, rgba(255, 255, 255, 1) 100%);
@@ -420,7 +402,6 @@ body {
     background: linear-gradient(135deg, rgba(88, 129, 134, 0.08) 0%, rgba(255, 255, 255, 1) 100%);
 }
 
-/* --- CAJA DE RELACIÓN (última sección) --- */
 .relacion-box {
     background: linear-gradient(135deg, #3D5A80 0%, #2B3A67 100%);
     border-radius: 35px;
@@ -450,7 +431,6 @@ body {
     color: #AE8DCD;
 }
 
-/* --- RESPONSIVE --- */
 @media (max-width: 768px) {
     .main-content {
         padding: 15px;

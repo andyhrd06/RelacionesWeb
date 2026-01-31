@@ -13,7 +13,6 @@ body {
     padding-bottom: 50px;
 }
 
-/* --- CÍRCULOS DECORATIVOS --- */
 .circle-deco {
     position: fixed;
     border-radius: 50%;
@@ -40,7 +39,6 @@ body {
 .circle-17{ width:110px;height:110px;background:rgba(174,141,205,.22);bottom:20%;left:20%;}
 .circle-18{ width:85px;height:85px;background:rgba(111,117,140,.2);top:35%;left:50%;}
 
-/* --- BARRA SUPERIOR --- */
 .barra-superior {
     display: flex;
     align-items: center;
@@ -94,7 +92,6 @@ body {
     text-transform: uppercase;
 }
 
-/* --- MENÚ --- */
 #menu {
     position: absolute;
     top: 60px;
@@ -140,7 +137,6 @@ body {
     padding-left: 10px;
 }
 
-/* --- TÍTULO PRINCIPAL --- */
 h1 {
     position: relative;
     z-index: 1;
@@ -154,7 +150,6 @@ h1 {
     text-align: center;
 }
 
-/* --- CONTENEDOR DE SECCIONES --- */
 .container-relaciones {
     position: relative;
     z-index: 1;
@@ -166,7 +161,6 @@ h1 {
     padding: 0 20px;
 }
 
-/* --- BLOQUES DE SECCIÓN --- */
 section {
     background: white;
     border-radius: 40px;
@@ -180,7 +174,6 @@ section:hover {
     transform: translateY(-5px);
 }
 
-/* --- ENCABEZADOS --- */
 h2 {
     color: #2B3A67;
     font-size: 32px;
@@ -206,7 +199,6 @@ h4 {
     font-weight: normal;
 }
 
-/* --- PÁRRAFOS --- */
 p {
     font-size: 18px;
     color: #4A5F7F;
@@ -214,7 +206,6 @@ p {
     margin-bottom: 15px;
 }
 
-/* --- FÓRMULAS --- */
 p[align="center"] {
     background: #F4F7F9;
     padding: 20px;
@@ -225,7 +216,6 @@ p[align="center"] {
     margin: 20px 0;
 }
 
-/* --- EJEMPLOS --- */
 .ejemplo-box {
     background: #2B3A67;
     color: white;
@@ -236,7 +226,6 @@ p[align="center"] {
     margin-top: 10px;
 }
 
-/* --- RESPONSIVE --- */
 @media (max-width: 768px) {
     h1 {
         font-size: 30px;

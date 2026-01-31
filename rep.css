@@ -13,7 +13,6 @@ body {
     padding-bottom: 50px;
 }
 
-/* --- CÍRCULOS DECORATIVOS --- */
 .circle-deco {
     position: fixed;
     border-radius: 50%;
@@ -40,7 +39,6 @@ body {
 .circle-17{ width:110px;height:110px;background:rgba(174,141,205,.22);bottom:20%;left:20%;}
 .circle-18{ width:85px;height:85px;background:rgba(111,117,140,.2);top:35%;left:50%;}
 
-/* --- BARRA SUPERIOR --- */
 .barra-superior {
     display: flex;
     align-items: center;
@@ -93,7 +91,6 @@ body {
     text-transform: uppercase;
 }
 
-/* --- MENÚ --- */
 #menu {
     position: absolute;
     top: 60px;
@@ -139,7 +136,6 @@ body {
     padding-left: 10px;
 }
 
-/* --- TÍTULO PRINCIPAL --- */
 .titulo-representacion {
     background: rgba(200, 205, 220, 0.7);
     border-radius: 30px;
@@ -161,7 +157,6 @@ body {
     text-transform: uppercase;
 }
 
-/* --- TEXTO INTRO --- */
 .intro-text {
     text-align: center;
     max-width: 1000px;
@@ -178,7 +173,6 @@ body {
     margin-bottom: 10px;
 }
 
-/* --- SECCIONES CON TÍTULO TURQUESA --- */
 .seccion-titulo-contenido {
     margin: 50px auto;
     max-width: 1400px;
@@ -204,7 +198,6 @@ body {
     font-style: italic;
 }
 
-/* --- CONTENIDO AZUL --- */
 .contenido-azul {
     background: linear-gradient(135deg, #4A5F7F 0%, #3B4D6B 100%);
     border-radius: 35px;
@@ -276,7 +269,6 @@ body {
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
 }
 
-/* --- SECCIONES ALTERNAS --- */
 .seccion-central {
     display: flex;
     align-items: center;
@@ -325,7 +317,6 @@ body {
     color: white;
 }
 
-/* --- COLUMNAS --- */
 .columna1, .columna4 {
     background: linear-gradient(135deg, #4A5F7F 0%, #3B4D6B 100%);
     border-radius: 35px;
@@ -350,7 +341,6 @@ body {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
 }
 
-/* --- RESPONSIVE --- */
 @media (max-width: 968px) {
     .seccion-central {
         flex-direction: column;

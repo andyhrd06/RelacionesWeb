@@ -3,18 +3,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Códigos MATLAB - Relaciones</title>
     
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atma:wght@400;500;600;700&family=Chewy&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     
-    <link rel="stylesheet" href="matlab.css">
+    <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism.css">
 </head>
 
 <body>
 
-<!-- Círculos decorativos de fondo -->
 <div class="circle-deco circle-1"></div>
 <div class="circle-deco circle-2"></div>
 <div class="circle-deco circle-3"></div>
@@ -34,7 +32,6 @@
 <div class="circle-deco circle-17"></div>
 <div class="circle-deco circle-18"></div>
 
-<!-- Barra superior -->
 <div class="barra-superior">
     <div class="botones-izq">
         <button onclick="menu.hidden = !menu.hidden">≡</button>
@@ -54,7 +51,6 @@
     </div>
 </div>
 
-<!-- Menú desplegable -->
 <ul id="menu" hidden>
     <li><a href="index.html">Página principal</a></li>
     <li><a href="queSon.html">¿Qué son las relaciones?</a></li>
@@ -67,7 +63,6 @@
     <li><a href="matlab.html">Matlab</a></li>
 </ul>
 
-<!-- SECCIÓN HERO -->
 <div class="hero-section">
     <div class="hero-content">
         <h1>RELACIONES</h1>
@@ -76,17 +71,17 @@
         <p>Una relación fundamental</p>
         <button onclick="location.href='queSon.html'">QUÉ SON?</button>
     </div>
-    <div class="hero-image">
-        <!-- Aquí puedes poner tu imagen -->
-        <img src="imagenes/matematicas.png" alt="Matemáticas" onerror="this.style.display='none'">
+    <div class="hero-video">
+        <video controls>
+            <source src="imagenes/poli.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
     </div>
 </div>
 
-<!-- SECCIÓN DE INFORMACIÓN (3 columnas) -->
 <div class="info-section">
     <div class="info-card-triple">
         
-        <!-- Columna izquierda: ¿Por qué este proyecto? -->
         <div class="info-card-section">
             <h2>Porque este<br>proyecto?</h2>
             <p>
@@ -97,12 +92,10 @@
             </p>
         </div>
         
-        <!-- Columna central: Imagen -->
         <div class="info-card-image-center">
-            <img src="imagenes/grupo.png" alt="Imagen del proyecto" onerror="this.style.display='none'">
+            <img src="imagenes/proyecto.png" alt="Imagen del proyecto" onerror="this.style.display='none'">
         </div>
         
-        <!-- Columna derecha: ¿A quién está dirigido? -->
         <div class="info-card-section">
             <h2>A quien va<br>dirigido?</h2>
             <p>
@@ -116,7 +109,6 @@
     </div>
 </div>
 
-<!-- SECCIÓN: Qué contenido voy a encontrar -->
 <div class="content-section">
     <div class="content-section-header">
         <h2>Que contenido va a encontrar?</h2>
@@ -153,29 +145,27 @@
     </div>
 </div>
 
-<!-- SECCIÓN: Quienes somos -->
 <div class="team-section" id="quienes-somos">
     <div class="team-wrapper">
         <div class="team-info-box">
             <h2>Quienes somos?</h2>
             <p>
-                Somos estudiantes de la Escuela Politécnica Nacional, de la carrera Ciencias de la Computación 
-                que buscan crear una página web donde aprender de la materia Matemáticas Computacionales no sea 
-                una tarde aburrida, sino una fácil visita y revisión.
+                Somos estudiantes de la Escuela Politécnica Nacional,que buscan crear 
+                una página web donde aprender de la materia Matemáticas Computacionales no sea 
+                una tarde aburrida, sino una fácil y divertida visita y revisión.
             </p>
         </div>
         
         <div class="team-members">
             <div class="team-member">
                 <div class="team-member-image">
-                    <!-- Imagen de paisaje o foto del miembro -->
-                    <img src="imagenes/mujer.webp" alt="Miembro del equipo" onerror="this.style.background='linear-gradient(180deg, #87CEEB 0%, #87CEEB 45%, #90EE90 45%, #90EE90 100%)'">
+                    <img src="imagenes/YOP.jpeg" alt="Miembro del equipo" onerror="this.style.background='linear-gradient(180deg, #87CEEB 0%, #87CEEB 45%, #90EE90 45%, #90EE90 100%)'">
                 </div>
                 <div class="team-member-text">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit sed do 
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
+                    <p><b>Angela Cevallos</b><br>
+                    Estudiante de segundo
+                    semestre de la carrera
+                    Ciencias de la Computación</p>
                 </div>
             </div>
             
@@ -184,41 +174,40 @@
                     <img src="imagenes/ariel.jpeg" alt="Miembro del equipo" onerror="this.style.background='linear-gradient(180deg, #87CEEB 0%, #87CEEB 45%, #90EE90 45%, #90EE90 100%)'">
                 </div>
                 <div class="team-member-text">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit sed do 
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
+                    <p><b>Ariel Soria</b><br>
+                    Estudiante de segundo
+                    semestre de la carrera
+                    Ciencias de la Computación</p>
                 </div>
             </div>
             
             <div class="team-member">
                 <div class="team-member-image">
-                    <img src="imagenes/hombre2.png" alt="Miembro del equipo" onerror="this.style.background='linear-gradient(180deg, #87CEEB 0%, #87CEEB 45%, #90EE90 45%, #90EE90 100%)'">
+                    <img src="imagenes/PERFIL1.jpeg" alt="Miembro del equipo" onerror="this.style.background='linear-gradient(180deg, #87CEEB 0%, #87CEEB 45%, #90EE90 45%, #90EE90 100%)'">
                 </div>
                 <div class="team-member-text">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit sed do 
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
+                    <p><b>Steven Moreta</b>
+                    <br>Estudiante de segundo
+                    semestre de la carrera
+                    Ciencias de la Computación</p>
                 </div>
             </div>
             
             <div class="team-member">
                 <div class="team-member-image">
-                    <img src="imagenes/hombre2.png" alt="Miembro del equipo" onerror="this.style.background='linear-gradient(180deg, #87CEEB 0%, #87CEEB 45%, #90EE90 45%, #90EE90 100%)'">
+                    <img src="imagenes/PERFIL2.jpeg" alt="Miembro del equipo" onerror="this.style.background='linear-gradient(180deg, #87CEEB 0%, #87CEEB 45%, #90EE90 45%, #90EE90 100%)'">
                 </div>
                 <div class="team-member-text">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipiscing elit sed do 
-                        eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    </p>
+                    <p><b>Haker Coloma</b>
+                    <br>Estudiante de segundo
+                    semestre de la carrera
+                    Ciencias de la Computación</p>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<!-- SECCIÓN: Contáctanos -->
 <div class="contact-section" id="contactanos">
     <div class="contact-info">
         <h2>Contactanos</h2>
@@ -252,3 +241,6 @@
 
 </body>
 </html>
+
+
+
